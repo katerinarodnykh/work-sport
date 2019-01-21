@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+  url("fonts/open-sans-regular.woff2") format("woff2"),
+  url("fonts/open-sans-regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'),
+  url("fonts/source-sans-pro-bold.woff2") format("woff2"),
+  url("fonts/source-sans-pro-bold.ttf") format("ttf");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --red_work-sport: #e94e34;
+}
+/* применение var(--color-blue); */
+
+.visually-hidden:not(:focus):not(active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--black);
+  font-style: normal;
+  font-weight: 400;
+  background-color: var(--white);
+  min-width: 1220px;
+}
+
+/*.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 211px);
+}*/
+
+a {
+  text-decoration: none;
+  color: var(--red_work-sport);
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+

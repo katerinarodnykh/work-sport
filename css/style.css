@@ -46,6 +46,8 @@ html {
 :root {
   --white: #ffffff;
   --black: #000000;
+  --gray: #2c2c2c;
+  --light-gray: rgba(0, 0, 0, 0.05);
   --red_work-sport: #e94e34;
 }
 /* применение var(--color-blue); */
@@ -70,19 +72,12 @@ html {
   color: var(--black);
   font-style: normal;
   font-weight: 400;
-  background-color: var(--white);
-  width: 1440px;
+  background-color: var(--white);width: 1440px;
   min-width: 1440px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin: 0 auto;
 }
-
-/*.main-container {
-  display: flex;
-  flex-direction: column;
-  min-height: calc(100vh - 211px);
-}*/
 
 a {
   text-decoration: none;
@@ -94,8 +89,14 @@ img {
   max-width: 100%;
 }
 
+.title {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
 .header {
-  width: 265px;
+  width: 18%;
   flex-shrink: 0;
 }
 
@@ -159,10 +160,46 @@ img {
 }
 
 .main-container {
-  flex-shrink: 0;
-  flex-grow: 1;
+  width: 82%;
   display: flex;
   flex-direction: column;
+}
+
+.worksport-info__content {
+  padding: 20px 115px 20px 30px;
+}
+
+.worksport-info__top {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.worksport-info__img {
+  display: block;
+}
+
+.worksport-info p {
+  margin: 22px 0;
+}
+
+.worksport-info__bottom {
+  display: flex;
+  height: 80px;
+  background-color: var(--light-gray);
+}
+
+.worksport-info__doc {
+  margin: 0 35px 0 0;
+}
+
+.worksport-info__document {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 212px;
+  height: 100%;
+  background-color: var(--gray);
+  color: var(--white);
 }
 
 .footer {

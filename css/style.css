@@ -390,5 +390,97 @@ img {
   font-weight: 700;
 }
 
+/* Форма обратной связи */
+
+.feedback {
+  background-color: var(--black);
+  padding: 56px 112px;
+  color: var(--white);
+}
+
+.feedback__container {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0 0 0;
+}
+
+.feedback__info {
+  width: 290px;
+}
+
+.feedback__title {
+  color: var(--white);
+}
+
+.feedback__contacts {
+  margin: 0 0 20px 0;
+}
+
+.feedback__contacts a {
+  display: block;
+  color: var(--white);
+}
+
+.feedback__socials {
+  margin: 40px 0 0 0;
+}
+
+.feedback__socials .socials__item {
+  margin: 0 30px 0 0;
+}
+
+.feedback-form {
+  width: 560px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.feedback-form__input {
+  height: 22px;
+  width: 100%;
+  padding: 3px 20px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--white);
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: var(--black);
+}
+
+
+.feedback-form__group:nth-child(3) {
+  width: 100%;
+}
+
+.feedback-form__group:first-child {
+  margin: 0 30px 55px 0;
+}
+
+.feedback-form__group:first-child .feedback-form__input,
+.feedback-form__group:nth-child(2) .feedback-form__input {
+  width: 265px;
+}
+
+.feedback-form__input:focus {
+  outline: none;
+  border-bottom: 1px solid var(--white);
+}
+
+.feedback-form__button {
+  color: var(--white);
+  border: none;
+  outline: none;
+  margin: 25px 0 0 0;
+}
+
+.feedback-form__help {
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 10px 0 0 0;
+  color: var(--red_work-sport);
+}
+
 
 

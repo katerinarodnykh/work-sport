@@ -72,7 +72,8 @@ html {
   color: var(--black);
   font-style: normal;
   font-weight: 400;
-  background-color: var(--white);width: 1440px;
+  background-color: var(--white);
+  width: 1440px;
   min-width: 1440px;
   display: flex;
   flex-wrap: nowrap;
@@ -89,6 +90,10 @@ img {
   max-width: 100%;
 }
 
+*:not(.socials, .svg-sprite) svg path {
+  fill: inherit;
+}
+
 .title {
   font-family: "Source Sans Pro", "Arial", sans-serif;
   font-size: 45px;
@@ -101,6 +106,24 @@ img {
   font-size: 32px;
   font-weight: 700;
   line-height: 1.19;
+}
+
+.heading {
+  font-family: "Source Sans Pro", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.button {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.75;
+  text-align: center;
+  color: var(--white);
+  padding: 8px 20px;
+  background-color: var(--red_work-sport);
+  text-transform: uppercase;
 }
 
 .header {
@@ -167,6 +190,19 @@ img {
   text-decoration: underline;
 }
 
+.socials {
+  list-style: none;
+  display: flex;
+}
+
+.header__socials {
+  margin: 30px 0 0 0;
+}
+
+.header__socials .socials__item {
+  margin: 0 10px 0 0;
+}
+
 .main-container {
   width: 82%;
   display: flex;
@@ -202,6 +238,7 @@ img {
 }
 
 .worksport-info__doc {
+  fill: var(--white);
   margin: 0 30px 0 0;
   flex-shrink: 0;
 }
@@ -226,67 +263,66 @@ img {
   margin: 0 0 0 125px;
 }
 
-#arrow path {
+.worksport-info__arrow {
   fill: var(--red_work-sport);
 }
 
-.worksport-offer__title {
+.offer__title {
   padding: 25px 100px;
   margin: 30px 0 0 0;
 }
 
-.worksport-offer__subtitle {
+.offer__subtitle {
   display: block;
   color: var(--black);
   width: 250px;
   margin: 0 0 20px 0;
 }
 
-.worksport-offer__list {
+.offer__list {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
 }
 
-.worksport-offer__item {
+.offer__item {
   position: relative;
-  padding: 65px 100px;
+  padding: 60px 100px;
   height: 320px;
   background-color: var(--light-gray);
-  background-position: right top;
+  background-position: right bottom;
   background-repeat: no-repeat;
 }
 
-.worksport-offer__item--oneday,
-.worksport-offer__item--liga {
+.offer__item--oneday,
+.offer__item--liga {
   width: 50%;
   border-bottom: 1px solid var(--white);
 }
 
-.worksport-offer__item--oneday {
+.offer__item--oneday {
   border-right: 1px solid var(--white);
   background-image: url(img/worksport-offer-oneday.png);
 }
 
-.worksport-offer__item--liga {
+.offer__item--liga {
   background-image: url(img/worksport-offer-liga.png);
-  background-position: right bottom;
 }
 
-.worksport-offer__item--projects {
+.offer__item--projects {
   width: 100%;
   background-image: url(img/worksport-offer-projects.png);
 }
 
-.worksport-offer__description {
+.offer__description {
   width: 250px;
 }
 
-.worksport-offer__item--projects .worksport-offer__description {
+.offer__item--projects .offer__description {
   width: 500px;
 }
 
-.worksport-offer__link {
+.offer__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -298,8 +334,60 @@ img {
   bottom: 0;
 }
 
-.worksport-offer__arrow #arrow path {
+.offer__arrow  {
   fill: var(--black);
+}
+
+.offer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  background-color: var(--black);
+}
+
+/* Почему мы? */
+
+.advantages {
+  background-image: url(img/advantages__bg.png);
+  padding: 57px 114px 30px 114px;
+}
+
+.advantages__title {
+  text-align: center;
+}
+
+.advantages__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px 0 25px 0;
+}
+
+.advantages__item {
+  width: calc((100% - 35px)/2);
+  display: flex;
+  margin: 0 0 30px 0;
+}
+
+.advantages__item:nth-child(odd) {
+  margin: 0 35px 30px 0;
+}
+
+.advantages__picture {
+  flex-shrink: 0;
+  width: 68px;
+  display: flex;
+  justify-content: center;
+  margin: 10px 30px 0 0;
+}
+
+.advantages__heading {
+  margin: 0 0 10px 0;
+}
+
+.advantages__info span {
+  font-weight: 700;
 }
 
 

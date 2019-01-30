@@ -47,8 +47,17 @@ html {
   --white: #ffffff;
   --black: #000000;
   --gray: #2c2c2c;
-  --light-gray: rgba(0, 0, 0, 0.05);
+  --gray-additional: #cccccc;
+  --light-gray: #f2f2f2;
   --red_work-sport: #e94e34;
+  --basketball: #ff6719;
+  --voleyball: #fed84d;
+  --tennis: #e24235;
+  --brain-ring: #3bd3c1;
+  --hockey: #81d4f7;
+  --run: #1b94d1;
+  --football: #16cf85;
+  --chess: #e78420;
 }
 /* применение var(--color-blue); */
 

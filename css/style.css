@@ -268,16 +268,20 @@ img {
   padding: 0 0 0 25px;
 }
 
-.worksport-info__link {
+.worksport-link {
   display: flex;
   align-items: center;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.5;
+}
+
+.worksport-info__link {
   margin: 0 0 0 125px;
 }
 
-.worksport-info__arrow {
+.worksport-link__arrow {
+  margin: 0 0 0 10px;
   fill: var(--red_work-sport);
 }
 
@@ -664,6 +668,67 @@ img {
   display: block;
   margin: 20px 0 0 0;
   color: var(--white-opacity);
+}
+
+/* Партнеры и клиенты */
+
+.partners {
+  margin: 0 0 55px 0;
+}
+
+.partners__title {
+  margin: 100px 0 10px 112px;
+}
+
+.partners__heading {
+  margin: 0 0 35px 0;
+}
+
+.partners__partners,
+.partners__clients {
+  padding: 25px 114px;
+}
+
+.partners__clients {
+  background-color: var(--light-gray);
+}
+
+.partners__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.partners__item {
+  flex-shrink: 0;
+  margin: 0 29px 30px 0;
+}
+
+.partners__item:nth-child(5n) {
+  margin: 0 0 30px 0;
+}
+
+.partners__link {
+  display: block;
+}
+
+/* Партнёры на главной */
+
+.partners-block {
+  padding: 55px 114px;
+}
+
+.partners-block__title {
+  margin: 0 0 55px 0;
+}
+
+.partners-block__container {
+  display: flex;
+  align-items: center;
+}
+
+.partners-block .partners__item {
+  margin: 0 29px 0 0;
 }
 
 

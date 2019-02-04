@@ -522,7 +522,8 @@ img {
   padding: 55px 114px;
 }
 
-.projects-slider__title {
+.projects-slider__title,
+.projects-slider__subtitle {
   margin: 0 0 20px 0;
 }
 
@@ -556,8 +557,40 @@ img {
 }
 
 .projects-slider__content {
+  display: flex;
+  flex-direction: column;
   background-color: var(--light-gray);
-  padding: 65px 30px 25px 30px;
+  padding: 65px 40px 25px 30px;
+  position: relative;
+}
+
+.projects-slider .slider-indicator {
+  top: 20px;
+  right: 35px;
+}
+
+.projects-slider__info {
+  margin: auto 0 0 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--black-opacity);
+  display: flex;
+}
+
+.projects-slider__info-item {
+  margin: 0 60px 0 0;
+}
+
+.projects-slider__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border: 1px solid var(--black);
+  position: absolute;
+  right: -1px;
+  bottom: 0;
 }
 
 /* Контакты */
@@ -851,7 +884,7 @@ img {
 .slider-indicator__button {
   width: 30px;
   height: 2px;
-  background-color: var(--light-gray);
+  background-color: var(--gray-additional);
   border: 0;
   cursor: pointer;
 }

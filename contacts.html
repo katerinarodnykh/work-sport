@@ -149,7 +149,10 @@
                     <label class="form__label">Желаемые виды спорта:</label>
                     <!--Мультиселект, можно выбрать несколько значений-->
                     <div class="form__select">
-                        <div class="form__select-top">Выберите значение из списка</div>
+                        <div class="form__select-top">
+                            <span>Выберите значение из списка</span>
+                            <svg class="form__select-icon" width="8" height="5"><use xlink:href="css/img/sprite.svg#select"></use></svg>
+                        </div>
                         <!--Открывается js, не продумано как это будет выглядеть когда пользователь выбрал, я вижу что это значения через запятую в form__select-top-->
                         <!--К элементу добавить скролл как в спринге-->
                         <ul class="form__select-list" style="display: none;">

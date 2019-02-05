@@ -1242,12 +1242,19 @@ img {
 }
 
 .form__select-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   line-height: 35px;
   cursor: pointer;
   font-size: 12px;
   padding: 0 15px;
   color: var(--black-opacity);
   border-bottom: 1px solid var(--gray-additional);
+}
+
+.form__select-icon {
+  fill: var(--black-opacity);
 }
 
 .form__select-list {

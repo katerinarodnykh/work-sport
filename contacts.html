@@ -121,6 +121,60 @@
                 </div>
                 <a class="button application-block__button" href="#">Отправить заявку</a>
             </section>
+            <form class="form" id="" action="" method="post">
+                <button class="form__close js-order-request-close" type="button"></button>
+                <h3 class="subtitle form__subtitle">Заявка на участие </br> в спортивном мероприятии</h3>
+                <p class="form__text">Отправьте запрос на участие или проведение спортивного мероприятия для вашей команды и мы обязательно свяжемся с вами в ближайшее время.</p>
+                <div class="form__group">
+                    <!--Весь блок отображается только тогда, когда есть ошибка-->
+                    <p class="form__error">Необходимо указать имя</p>
+                    <input type="text" id="" class="form__input" placeholder="Как к вам обращаться *" aria-required="true" aria-invalid="true" required>
+                </div>
+                <div class="form__group">
+                    <!--<p class="form__error">Необходимо указать название компании</p>-->
+                    <input type="text" id="" class="form__input" placeholder="Название компании *" aria-required="true" aria-invalid="true" required>
+                </div>
+                <div class="form__container">
+                    <div class="form__group">
+                        <!--<p class="form__error">Необходимо указать номер телефона</p>-->
+                        <input type="tel" id="" class="form__input" placeholder="Номер телефона *" aria-required="true" aria-invalid="true" required>
+                    </div>
+                    <div class="form__group">
+                        <!--<p class="form__error">Необходимо указать электронную почту</p>-->
+                        <input type="email" id="" class="form__input" placeholder="Электронная почта *" aria-required="true" aria-invalid="true" required>
+                    </div>
+                </div>
+                <p class="form__note">Если вы хотите принять участие в понравившемся турнире или чемпионате, заполните пункты ниже.</p>
+                <div class="form__group">
+                    <label class="form__label">Желаемые виды спорта:</label>
+                    <!--Мультиселект, можно выбрать несколько значений-->
+                    <div class="form__select">
+                        <div class="form__select-top">Выберите значение из списка</div>
+                        <!--Открывается js, не продумано как это будет выглядеть когда пользователь выбрал, я вижу что это значения через запятую в form__select-top-->
+                        <!--К элементу добавить скролл как в спринге-->
+                        <ul class="form__select-list" style="display: none;">
+                            <li class="form__select-option">Футбол</li>
+                            <li class="form__select-option form__select-option--active">Хоккей</li>
+                            <li class="form__select-option">Футбол</li>
+                            <li class="form__select-option">Футбол</li>
+                            <li class="form__select-option">Футбол</li>
+                            <li class="form__select-option">Футбол</li>
+                            <li class="form__select-option">Футбол</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form__group form__group--tournaments">
+                    <label for="id" class="form__label">Интересующие турниры:</label>
+                    <input type="text" id="" class="form__input" placeholder="Внесите название турнира/турниров" >
+                </div>
+                <div class="form__buttons">
+                    <button class="button form__button" type="reset">Отменить</button>
+                    <!--Класс button--disabled висит до тех пор пока не заполнены все обязательные поля-->
+                    <button class="button button--disabled" type="submit">Отправить заявку</button>
+                </div>
+            </form>
+            <!--Для затемнения фона за формой добавляется этот блок-->
+            <div class="overlay"></div>
         </div>
         <footer class="footer">
             <!--! Такой подвал только на странице контактов, на всех остальных в подвале черная форма с заказом звонка и карта-->

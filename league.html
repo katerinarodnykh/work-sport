@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Work&Sport</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<main class="main">
+    <header class="header">
+        <div class="header__container">
+            <a class="logo header__logo" href="#">
+                <img class="logo__img" src="img/ws-logo.png" width="155" height="71">
+            </a>
+            <nav class="navigation">
+                <a class="navigation__link" href="#">Турниры и чемпионаты</a>
+                <a class="navigation__link" href="#">Спецпроекты</a>
+                <a class="navigation__link" href="#">Портфолио</a>
+                <a class="navigation__link" href="#">О компании</a>
+                <a class="navigation__link" href="#">Услуги</a>
+                <a class="navigation__link" href="#">Партнеры и клиенты</a>
+                <a class="navigation__link" href="#">Контакты</a>
+            </nav>
+            <section class="header__info">
+                <div class="contacts-block">
+                    <a class="contacts-block__tel" href="tel: +7 987 654 32 10">+7 987 654 32 10</a>
+                    <a class="contacts-block__mail" href="mailto: info@mail.ru">info@mail.ru</a>
+                </div>
+                <ul class="socials header__socials">
+                    <li class="socials__item socials__item--vk">
+                        <a class="socials__link" href="#"><svg class="socials__icon" width="24" height="24"><use xlink:href="css/img/sprite.svg#vk"></use></svg></a>
+                    </li>
+                    <li class="socials__item socials__item--youtube">
+                        <a class="socials__link" href="#"><svg class="socials__icon" width="24" height="24"><use xlink:href="css/img/sprite.svg#youtube"></use></svg></a>
+                    </li>
+                    <li class="socials__item socials__item--instagram">
+                        <a class="socials__link" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M12 0c6.6 0 12 5.4 12 12s-5.4 12-12 12S0 18.6 0 12 5.4 0 12 0z" fill="#fff"/><linearGradient id="a" gradientUnits="userSpaceOnUse" x1="-731.071" y1="462.466" x2="-731.071" y2="463.455" gradientTransform="matrix(13.31 0 0 -13.31 9742.543 6174.023)"><stop offset="0" stop-color="#e09b3d"/><stop offset=".3" stop-color="#c74c4d"/><stop offset=".6" stop-color="#c21975"/><stop offset="1" stop-color="#7024c4"/></linearGradient><path d="M14.7 5.3c2.2 0 4 1.8 4 4v5.4c0 2.2-1.8 4-4 4H9.3c-2.2 0-4-1.8-4-4V9.3c0-2.2 1.8-4 4-4h5.4zm2.6 9.4V9.3c0-1.5-1.2-2.6-2.6-2.6H9.3c-1.5 0-2.6 1.2-2.6 2.6v5.4c0 1.5 1.2 2.6 2.6 2.6h5.4c1.4 0 2.6-1.2 2.6-2.6zM12 8.5c1.9 0 3.4 1.5 3.4 3.4s-1.5 3.4-3.4 3.4-3.5-1.4-3.5-3.3 1.6-3.5 3.5-3.5zm0 5.6c1.2 0 2.1-.9 2.1-2.1 0-1.2-.9-2.1-2.1-2.1-1.2 0-2.1.9-2.1 2.1s.9 2.1 2.1 2.1zm3.4-4.7c-.5 0-.8-.4-.8-.8s.4-.8.8-.8.8.4.8.8-.3.8-.8.8z" fill="url(#a)"/></svg>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="main-content">
+        <!--Страница "Liga Work & Sport"-->
+            <!--<svg class="svg-sprite" style="display: none;">
+
+            </svg>-->
+        <h1 class="visually-hidden">Liga Work & Sport</h1>
+        <section class="league">
+            <!--Слайдер немного изменился, в тот который на странице "о нас" нужно добавить slider__content, в нём заголовок h2-->
+            <div class="slider slider--league">
+                <ul class="slider__list">
+                    <li class="slider__item">
+                        <!--На данной странице ссылка не активна, но на следующих уровнях по ней можно попасть на эту страницу, хотя для крошек может быть будет подключаться плагин(?)-->
+                        <p class="slider__breadcrumbs"><a href="#">Турниры и чемпионаты</a>&nbsp;&nbsp;/</p>
+                        <div class="slider__content">
+                            <h2 class="title slider__title">Liga Work & Sport</h2>
+                            <p class="slider__text">Liga Work & Sport – это самая масштабная серия корпоративных чемпионатов
+                                в Санкт-Петербурге, организованных на самом высоком уровне! Каждый сезон соревнования проходят по трём видам спорта: футбол, волейбол и баскетбол,
+                                а участие в них приняло более 300 команд! Победа в длительном чемпионате
+                                Liga Work & Sport является достойным результатом в корпоративной сфере нашего города!</p>
+                        </div>
+                        <img src="img/all-sports.jpg" width="1180" height="480">
+                    </li>
+                </ul>
+                <ul class="slider-indicator">
+                    <li class="slider-indicator__item">
+                        <button class="slider-indicator__button slider-indicator__button--active" type="button"></button>
+                    </li>
+                    <li class="slider-indicator__item">
+                        <button class="slider-indicator__button" type="button"></button>
+                    </li>
+                    <li class="slider-indicator__item">
+                        <button class="slider-indicator__button" type="button"></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="sports-tabs">
+                <ul class="sports-tabs__navigation">
+                    <li class="sports-tabs__item">
+                        <a class="sports-tabs__link" href="#">
+                            <svg class="sports-tabs__icon" width="42" height="42"><use xlink:href="css/img/sprite.svg#football"></use></svg>
+                        </a>
+                    </li>
+                </ul>
+                <div class="sports-tabs__content">
+                    <div class="sports-tabs__pane"></div>
+                </div>
+            </div>
+
+        </section>
+        </div>
+    </div>
+</main>
+</body>
+</html>

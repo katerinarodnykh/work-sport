@@ -865,13 +865,31 @@ img {
   height: 100%;
 }
 
-.slider__title {
+.slider__content {
   position: absolute;
   top: 100px;
   left: 114px;
   width: 470px;
   color: var(--white);
   z-index: 2;
+}
+
+.slider__breadcrumbs {
+  position: absolute;
+  top: 55px;
+  left: 114px;
+  color: var(--white-opacity);
+  z-index: 2;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.slider__breadcrumbs a {
+  color: var(--white-opacity);
+}
+
+.slider__title {
+  margin: 0 0 25px 0;
 }
 
 .slider-indicator {
@@ -1134,6 +1152,17 @@ img {
 .services__button {
   margin: auto 0 0 0;
 }
+
+/* Лига  Work & Sport */
+
+.sports-tabs__icon {
+  fill: var(--gray-additional);
+}
+
+.sports-tabs__link:hover .sports-tabs__icon {
+  fill: var(--black);
+}
+
 
 
 

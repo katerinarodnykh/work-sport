@@ -1403,7 +1403,14 @@ img {
   flex-shrink: 0;
 }
 
-.sports-tabs__link:hover .sports-tabs__icon {
+.sports-tabs__link:hover .sports-tabs__icon,
+.sports-tabs__item--football-active .sports-tabs__icon,
+.sports-tabs__item--volleyball-active .sports-tabs__icon,
+.sports-tabs__item--backetball-active .sports-tabs__icon,
+.sports-tabs__item--tennis-active .sports-tabs__icon,
+.sports-tabs__item--chess-active .sports-tabs__icon,
+.sports-tabs__item--run-active .sports-tabs__icon,
+.sports-tabs__item--hockey-active .sports-tabs__icon {
   fill: var(--black);
 }
 
@@ -1411,54 +1418,185 @@ img {
   color: var(--black);
 }
 
-.sports-tabs__item--all .sports-tabs__link {
+.sports-tabs__item--all:hover .sports-tabs__link,
+.sports-tabs__item--all-active .sports-tabs__link {
   background-color: var(--red);
   border-bottom: 1px solid var(--red);
   border-right: 1px solid var(--red);
 }
 
-.sports-tabs__item--football:hover .sports-tabs__link {
+.sports-tabs__item--football:hover .sports-tabs__link,
+.sports-tabs__item--football-active .sports-tabs__link {
   background-color: var(--football);
   border-bottom: 1px solid var(--football);
   border-right: 1px solid var(--football);
 }
 
-.sports-tabs__item--volleyball:hover .sports-tabs__link {
+.sports-tabs__item--volleyball:hover .sports-tabs__link,
+.sports-tabs__item--volleyball-active .sports-tabs__link {
   background-color: var(--voleyball);
   border-bottom: 1px solid var(--voleyball);
   border-right: 1px solid var(--voleyball);
 }
 
-.sports-tabs__item--basketball:hover .sports-tabs__link {
+.sports-tabs__item--basketball:hover .sports-tabs__link,
+.sports-tabs__item--backetball-active .sports-tabs__link {
   background-color: var(--basketball);
   border-bottom: 1px solid var(--basketball);
   border-right: 1px solid var(--basketball);
 }
 
-.sports-tabs__item--tennis:hover .sports-tabs__link {
+.sports-tabs__item--tennis:hover .sports-tabs__link,
+.sports-tabs__item--tennis-active .sports-tabs__link {
   background-color: var(--tennis);
   border-bottom: 1px solid var(--tennis);
   border-right: 1px solid var(--tennis);
 }
 
-.sports-tabs__item--chess:hover .sports-tabs__link {
+.sports-tabs__item--chess:hover .sports-tabs__link,
+.sports-tabs__item--chess-active .sports-tabs__link {
   background-color: var(--chess);
   border-bottom: 1px solid var(--chess);
   border-right: 1px solid var(--chess);
 }
 
-.sports-tabs__item--run:hover .sports-tabs__link {
+.sports-tabs__item--run:hover .sports-tabs__link,
+.sports-tabs__item--run-active .sports-tabs__link {
   background-color: var(--run);
   border-bottom: 1px solid var(--run);
   border-right: 1px solid var(--run);
 }
 
-.sports-tabs__item--hockey:hover .sports-tabs__link {
+.sports-tabs__item--hockey:hover .sports-tabs__link,
+.sports-tabs__item--hockey-active .sports-tabs__link {
   background-color: var(--hockey);
   border-bottom: 1px solid var(--hockey);
   border-right: 1px solid var(--hockey);
 }
 
+.sports-tabs--slider .sports-tabs__navigation {
+  overflow: hidden;
+}
+
+.sports-tabs--slider .sports-tabs__item {
+  flex-shrink: 0;
+  width: auto;
+  min-width: 200px;
+}
+
+.sports-tabs--slider .sports-tabs__link {
+  white-space: nowrap;
+  padding: 0 20px;
+}
+
+.sports-tabs__top {
+  position: relative;
+}
+
+.sports-tabs__control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border: 1px solid var(--gray-additional);
+  border-top: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: var(--white);
+}
+
+.sports-tabs__control--back {
+  left: 0;
+  right: auto;
+}
+
+.sports-tabs__control--back .sports-tabs__arrow {
+  transform: scale(-1, 1);
+}
+
+.tournaments {
+  background-color: var(--light-gray);
+}
+
+.select {
+  position: relative;
+}
+
+.select__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 35px;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 0 15px;
+  color: var(--black-opacity);
+  border-bottom: 1px solid var(--black);
+  min-width: 180px;
+}
+
+.select__icon {
+  fill: var(--black-opacity);
+  margin: 0 0 0 10px;
+}
+
+.select__list {
+  position: absolute;
+  list-style: none;
+  z-index: 99;
+  background-color: var(--white);
+  width: 100%;
+  padding: 0 0 15px 0;
+  max-height: 185px;
+  overflow-y: scroll;
+  box-shadow: 0 2px 15px -6px var(--black);
+}
+
+.select__option {
+  line-height: 35px;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+.select__option--active {
+  background-color: var(--light-gray);
+}
+
+.tournaments-unit {
+  padding: 37px 114px 0 114px;
+}
+
+.tournaments-unit__top {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 45px 0;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-item {
+  width: 240px;
+  height: 325px;
+  background-size: cover;
+}
+
+.list-item__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border: 1px solid var(--white);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
 
 
 

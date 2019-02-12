@@ -166,6 +166,7 @@
                     <div class="tournaments-unit__top">
                         <h2 class="subtitle">Ближайшие турниры</h2>
                         <div class="select">
+                            <!--Класс select__top--active добавляется, когда селект открыт-->
                             <div class="select__top">
                                 <span>За всё время</span>
                                 <svg class="select__icon" width="8" height="5"><use xlink:href="css/img/sprite.svg#select"></use></svg>
@@ -180,15 +181,106 @@
                     <ul class="list">
                         <!--Размер фонового изображения для загрузки 240*325-->
                         <li class="list-item" style="background-image: url('img/all-sports.jpg')">
-                            <div class="list-item__tag">Liga Work&Sport</div>
-                            <h3 class="subtitle list-item__subtitle">Название афиши</h3>
+                            <div class="list-item__content">
+                                <div class="list-item__tag">Liga Work&Sport</div>
+                                <!--Для кроссбраузерности слишком длинный текст троеточится в конце js (например, TextOverflowClamp.js), сейчас стили не отрабатывают в  FF-->
+                                <a class="subtitle list-item__subtitle" href="#">Название афиши fhvbhfv shbvhbv ghbshjnljfv bnjtrnbjtrb jnlbwjrtnlb wtjnbjtn</a>
+                            </div>
                             <div class="list-item__info">
-                                <p class=""></p>
+                                <div class="list-item__date">
+                                    <p>Начало чемпионата</p>
+                                    <p>12.03.2018 г.</p>
+                                </div>
                                 <a class="list-item__link" href="#"><svg class="list-item__arrow" width="24" height="11"><use  xlink:href="css/img/sprite.svg#arrow"></use></svg></a>
                             </div>
                         </li>
-                        <li class="list-item" style="background-image: url('img/all-sports.jpg')"></li>
+                        <li class="list-item" style="background-image: url('img/all-sports.jpg')">
+                            <div class="list-item__content">
+                                <div class="list-item__tag">Liga Work&Sport</div>
+                                <a class="subtitle list-item__subtitle" href="#">Day 2: Handful of teams still in contention</a>
+                            </div>
+                            <div class="list-item__info">
+                                <div class="list-item__date">
+                                    <p>Начало чемпионата</p>
+                                    <p>12.03.2018 г.</p>
+                                </div>
+                                <a class="list-item__link" href="#"><svg class="list-item__arrow" width="24" height="11"><use  xlink:href="css/img/sprite.svg#arrow"></use></svg></a>
+                            </div>
+                        </li>
                     </ul>
+                </div>
+                <div class="tournaments-unit">
+                    <div class="tournaments-unit__top">
+                        <h2 class="subtitle">Турниры 2018</h2>
+                    </div>
+                    <ul class="list">
+                        <li class="list-item" style="background-image: url('img/all-sports.jpg')">
+                            <div class="list-item__content">
+                                <div class="list-item__tag">Liga Work&Sport</div>
+                                <a class="subtitle list-item__subtitle" href="#">Day 2: Handful of teams still in contention</a>
+                            </div>
+                            <div class="list-item__info">
+                                <div class="list-item__date">
+                                    <p>Начало чемпионата</p>
+                                    <p>12.03.2018 г.</p>
+                                </div>
+                                <a class="list-item__link" href="#"><svg class="list-item__arrow" width="24" height="11"><use  xlink:href="css/img/sprite.svg#arrow"></use></svg></a>
+                            </div>
+                        </li>
+                        <li class="list-item" style="background-image: url('img/all-sports.jpg')">
+                            <div class="list-item__content">
+                                <div class="list-item__tag">Liga Work&Sport</div>
+                                <a class="subtitle list-item__subtitle" href="#">Day 2: Handful of teams still in contention</a>
+                            </div>
+                            <div class="list-item__info">
+                                <div class="list-item__date">
+                                    <p>Начало чемпионата</p>
+                                    <p>12.03.2018 г.</p>
+                                </div>
+                                <a class="list-item__link" href="#"><svg class="list-item__arrow" width="24" height="11"><use  xlink:href="css/img/sprite.svg#arrow"></use></svg></a>
+                            </div>
+                        </li>
+                        <li class="list-item" style="background-image: url('img/all-sports.jpg')">
+                            <div class="list-item__content">
+                                <div class="list-item__tag">Liga Work&Sport</div>
+                                <a class="subtitle list-item__subtitle" href="#">Day 2: Handful of teams still in contention</a>
+                            </div>
+                            <div class="list-item__info">
+                                <div class="list-item__date">
+                                    <p>Начало чемпионата</p>
+                                    <p>12.03.2018 г.</p>
+                                </div>
+                                <a class="list-item__link" href="#"><svg class="list-item__arrow" width="24" height="11"><use  xlink:href="css/img/sprite.svg#arrow"></use></svg></a>
+                            </div>
+                        </li>
+                        <li class="list-item" style="background-image: url('img/all-sports.jpg')">
+                            <div class="list-item__content">
+                                <div class="list-item__tag">Liga Work&Sport</div>
+                                <a class="subtitle list-item__subtitle" href="#">Day 2: Handful of teams still in contention</a>
+                            </div>
+                            <div class="list-item__info">
+                                <div class="list-item__date">
+                                    <p>Начало чемпионата</p>
+                                    <p>12.03.2018 г.</p>
+                                </div>
+                                <a class="list-item__link" href="#"><svg class="list-item__arrow" width="24" height="11"><use  xlink:href="css/img/sprite.svg#arrow"></use></svg></a>
+                            </div>
+                        </li>
+                        <li class="list-item" style="background-image: url('img/all-sports.jpg')">
+                            <div class="list-item__content">
+                                <div class="list-item__tag">Liga Work&Sport</div>
+                                <a class="subtitle list-item__subtitle" href="#">Day 2: Handful of teams still in contention</a>
+                            </div>
+                            <div class="list-item__info">
+                                <div class="list-item__date">
+                                    <p>Начало чемпионата</p>
+                                    <p>12.03.2018 г.</p>
+                                </div>
+                                <a class="list-item__link" href="#"><svg class="list-item__arrow" width="24" height="11"><use  xlink:href="css/img/sprite.svg#arrow"></use></svg></a>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="button button--red-black tournaments-unit__button" type="reset">Загрузить ещё 16</button>
                 </div>
             </div>
         </section>

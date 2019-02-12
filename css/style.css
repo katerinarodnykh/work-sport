@@ -158,6 +158,13 @@ img {
   background-color: var(--white);
 }
 
+.button--red-black {
+  background-color: transparent;
+  border: 1px solid var(--red);
+  color: var(--black);
+  font-weight: 400;
+}
+
 .button--disabled {
   background-color: var(--gray-additional);
 }
@@ -1537,6 +1544,11 @@ img {
   min-width: 180px;
 }
 
+.select__top:hover,
+.select__top--active {
+  background-color: var(--white-opacity);
+}
+
 .select__icon {
   fill: var(--black-opacity);
   margin: 0 0 0 10px;
@@ -1560,18 +1572,27 @@ img {
   cursor: pointer;
 }
 
+.select__option:hover,
 .select__option--active {
   background-color: var(--light-gray);
 }
 
+.tournaments {
+  padding: 0 0 55px 0;
+}
+
 .tournaments-unit {
-  padding: 37px 114px 0 114px;
+  padding: 37px 105px 0 114px;
 }
 
 .tournaments-unit__top {
   display: flex;
   justify-content: space-between;
-  margin: 0 0 45px 0;
+  margin: 0 0 25px 0;
+}
+
+.tournaments-unit:first-of-type .subtitle {
+  margin: 0 0 20px 0;
 }
 
 .list {
@@ -1584,6 +1605,63 @@ img {
   width: 240px;
   height: 325px;
   background-size: cover;
+  color: var(--white);
+  position: relative;
+  box-shadow: 0 0 0 240px var(--black-opacity) inset;
+  display: flex;
+  flex-direction: column;
+}
+
+.list .list-item {
+  border: 1px solid var(--light-gray);
+}
+
+.list-item__content {
+  padding: 20px 28px;
+}
+
+.list-item__tag {
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 0 0 0 20px;
+  position: relative;
+  margin: 0 0 15px 0;
+}
+
+.list-item__tag:after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 4px;
+  background-color: var(--red);
+  left: 0;
+  top: 50%;
+  margin-top: -2px;
+}
+
+.list-item__subtitle {
+  color: var(--white);
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 156px;
+}
+
+.list-item__info {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  margin: auto 0 0 0;
+  border: 1px solid var(--white);
+}
+
+.list-item__date {
+  padding: 0 10px 0 28px;
+  font-size: 12px;
+  line-height: 1.5;
+  flex-shrink: 0;
 }
 
 .list-item__link {
@@ -1592,10 +1670,27 @@ img {
   justify-content: center;
   width: 80px;
   height: 80px;
-  border: 1px solid var(--white);
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  border-left: 1px solid var(--white);
+  flex-shrink: 0;
+}
+
+.list-item__arrow {
+  fill: var(--white);
+}
+
+.list-item__link:hover {
+  background-color: var(--white);
+  transition: all 0.3s;
+}
+
+.list-item__link:hover .list-item__arrow {
+  fill: var(--red);
+  transition: all 0.3s;
+}
+
+.tournaments-unit__button {
+  display: block;
+  margin: 25px auto 0 auto;
 }
 
 

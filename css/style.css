@@ -886,7 +886,7 @@ img {
   position: absolute;
   top: 100px;
   left: 114px;
-  width: 470px;
+  width: 510px;
   color: var(--white);
   z-index: 2;
 }
@@ -907,6 +907,10 @@ img {
 
 .slider__title {
   margin: 0 0 25px 0;
+}
+
+.slider__text {
+  margin: 0 0 20px 0;
 }
 
 .slider-indicator {
@@ -1638,7 +1642,7 @@ img {
 }
 
 .list-item__content {
-  padding: 20px 28px;
+  padding: 20px 28px 10px 28px;
 }
 
 .list-item__tag {
@@ -1772,7 +1776,70 @@ img {
   margin: 0 0 2px 0;
 }
 
+/* Проект */
 
+.slider__info {
+  list-style: none;
+  color: var(--white);
+  font-size: 12px;
+  line-height: 1.5;
+  display: flex;
+}
+
+.slider__info-item {
+  display: flex;
+  min-width: 190px;
+  max-width: 220px;
+  padding: 0 10px 0 0;
+}
+
+.slider__info-icon {
+  flex-shrink: 0;
+  margin: 0 15px 0 0;
+}
+
+.slider--project .slider__info {
+  position: absolute;
+  bottom: 35px;
+  left: 114px;
+  z-index: 2;
+}
+
+.project__content {
+  min-height: 250px;
+  display: flex;
+}
+
+.project__description {
+  width: 705px;
+  background-color: var(--white);
+  padding: 55px 30px 20px 114px;
+}
+
+.project__application {
+  width: 475px;
+  background-color: var(--gray);
+  padding: 55px 30px 10px 30px;
+  color: var(--white);
+}
+
+.project__heading {
+  margin: 0 0 10px 0;
+}
+
+.project__button {
+  display: inline-block;
+  margin: 35px 0 0 0;
+}
+
+.photo {
+  padding: 35px 0 55px 100px;
+  background-color: var(--light-gray);
+}
+
+.photo__subtitle {
+  margin: 0 0 35px 0;
+}
 
 
 

@@ -874,7 +874,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  box-shadow: 0 0 0 240px var(--black-opacity) inset;
+  box-shadow: 0 0 0 325px var(--black-opacity) inset;
 }
 
 .slider__item img {
@@ -936,6 +936,21 @@ img {
 
 .slider-indicator__button:focus {
   outline: none;
+}
+
+/* Главный слайдер */
+
+.slider--main .slider__item {
+  height: 640px;
+}
+
+.slider--main .slider__content {
+  top: 160px;
+  width: 400px;
+}
+
+.slider--main .slider__title {
+  margin: 0 0 40px 0;
 }
 
 .principles {

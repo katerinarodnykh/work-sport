@@ -1601,6 +1601,20 @@ img {
   background-color: var(--light-gray);
 }
 
+.select--red .select__top:hover,
+.select--red .select__top--active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.select--red .select__top {
+  color: var(--white);
+  border-bottom: 1px solid var(--white);
+}
+
+.select--red .select__icon {
+  fill: var(--white);
+}
+
 .tournaments {
   padding: 0 0 55px 0;
 }
@@ -1839,6 +1853,21 @@ img {
 
 .photo__subtitle {
   margin: 0 0 35px 0;
+}
+
+/* Портфолио, список проектов */
+
+.portfolio__title {
+  color: var(--white);
+}
+
+.portfolio__header {
+  height: 190px;
+  background-color: var(--red);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 114px 35px 114px;
 }
 
 

@@ -913,7 +913,7 @@ img {
   list-style: none;
   display: flex;
   position: absolute;
-  top: 50px;
+  top: 30px;
   right: 50px;
 }
 
@@ -927,10 +927,15 @@ img {
   background-color: var(--gray-additional);
   border: 0;
   cursor: pointer;
+  display: block;
 }
 
 .slider-indicator__button--active {
   background-color: var(--red);
+}
+
+.slider-indicator__button:focus {
+  outline: none;
 }
 
 .principles {
@@ -1610,6 +1615,7 @@ img {
   box-shadow: 0 0 0 240px var(--black-opacity) inset;
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
 }
 
 .list .list-item {
@@ -1651,6 +1657,7 @@ img {
 
 .list-item__info {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   height: 80px;
   margin: auto 0 0 0;
@@ -1662,6 +1669,7 @@ img {
   font-size: 12px;
   line-height: 1.5;
   flex-shrink: 0;
+  width: 158px;
 }
 
 .list-item__link {
@@ -1692,6 +1700,63 @@ img {
   display: block;
   margin: 25px auto 0 auto;
 }
+
+/* Слайдер Ближайшие события */
+
+.vertical-slider {
+  padding: 55px 114px 30px 114px;
+}
+
+.vertical-slider__title {
+  margin: 0 0 40px 0;
+}
+
+.vertical-slider--black {
+  background-color: var(--black);
+}
+
+.vertical-slider--black .vertical-slider__title {
+  color: var(--white);
+}
+
+.vertical-slider__container {
+  margin: 0 0 55px 0;
+  position: relative;
+}
+
+.vertical-slider__list {
+  list-style: none;
+  display: flex;
+  width: 885px;
+  overflow: hidden;
+}
+
+.vertical-slider .list-item {
+  margin: 0 30px 0 0;
+  width: 265px;
+  height: 360px;
+}
+
+.vertical-slider .list-item__tag {
+  margin: 0 0 25px 0;
+}
+
+.slider-indicator--vertical {
+  flex-direction: column;
+  align-items: flex-start;
+  top: 0;
+  right: 0;
+}
+
+.slider-indicator--vertical .slider-indicator__button {
+  width: 2px;
+  height: 30px;
+}
+
+.slider-indicator--vertical .slider-indicator__item {
+  margin: 0 0 2px 0;
+}
+
 
 
 

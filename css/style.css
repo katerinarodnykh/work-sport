@@ -904,8 +904,13 @@ img {
   z-index: 2;
 }
 
-.slider__breadcrumbs a {
+.slider__breadcrumbs a,
+.page-header--common .breadcrumbs a {
   color: var(--white-opacity);
+}
+
+.page-header .breadcrumbs {
+  margin: 0 0 25px 0;
 }
 
 .slider__title {
@@ -1873,12 +1878,18 @@ img {
 .page-header  {
   height: 190px;
   display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-end;
   padding: 0 114px 0 114px;
 }
 
-.portfolio__header {
+.page-header__container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.page-header--common {
   background-color: var(--red);
   padding: 0 114px 35px 114px;
 }

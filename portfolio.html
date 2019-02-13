@@ -48,19 +48,21 @@
         <div class="main-content">
         <h1 class="visually-hidden">Портфолио Work & Sport</h1>
         <section class="portfolio">
-            <div class="page-header portfolio__header">
-                <h2 class="title page-header__title portfolio__title">Портфолио</h2>
-                <div class="select select--red">
-                    <!--Класс select__top--active добавляется, когда селект открыт-->
-                    <div class="select__top">
-                        <span>За всё время</span>
-                        <svg class="select__icon" width="8" height="5"><use xlink:href="css/img/sprite.svg#select"></use></svg>
+            <div class="page-header page-header--common">
+                <div class="page-header__container">
+                    <h2 class="title page-header__title portfolio__title">Портфолио</h2>
+                    <div class="select select--red">
+                        <!--Класс select__top--active добавляется, когда селект открыт-->
+                        <div class="select__top">
+                            <span>За всё время</span>
+                            <svg class="select__icon" width="8" height="5"><use xlink:href="css/img/sprite.svg#select"></use></svg>
+                        </div>
+                        <!--К элементу добавить скролл как в спринге-->
+                        <ul class="select__list" style="display: none;">
+                            <li class="select__option">Сезон 1</li>
+                            <li class="select__option select__option--active">Сезон 2</li>
+                        </ul>
                     </div>
-                    <!--К элементу добавить скролл как в спринге-->
-                    <ul class="select__list" style="display: none;">
-                        <li class="select__option">Сезон 1</li>
-                        <li class="select__option select__option--active">Сезон 2</li>
-                    </ul>
                 </div>
             </div>
             <div class="tournaments">

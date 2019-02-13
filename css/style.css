@@ -1872,6 +1872,7 @@ img {
 
 .page-header__title {
   color: var(--white);
+  max-width: 680px;
 }
 
 .page-header  {
@@ -1880,6 +1881,8 @@ img {
   flex-direction: column;
   justify-content: flex-end;
   padding: 55px 114px 35px 114px;
+  position: relative;
+  overflow: hidden;
 }
 
 .page-header__container {
@@ -2115,7 +2118,25 @@ span.announcement__item {
   border: 1px solid var(--hockey);
 }
 
+/* Групповой этап */
 
+.main-container--football .page-header {
+  background-color: var(--football);
+}
+
+.breadcrumbs--sports,
+.breadcrumbs--sports a {
+  color: var(--black-opacity);
+}
+
+.page-header__icon {
+  position: absolute;
+  top: 50%;
+  margin-top: -110px;
+  right: 114px;
+  fill: var(--black);
+  opacity: 0.1;
+}
 
 
 

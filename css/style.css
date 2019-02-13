@@ -1445,7 +1445,7 @@ img {
 .sports-tabs__link:hover .sports-tabs__icon,
 .sports-tabs__item--football-active .sports-tabs__icon,
 .sports-tabs__item--volleyball-active .sports-tabs__icon,
-.sports-tabs__item--backetball-active .sports-tabs__icon,
+.sports-tabs__item--basketball-active .sports-tabs__icon,
 .sports-tabs__item--tennis-active .sports-tabs__icon,
 .sports-tabs__item--chess-active .sports-tabs__icon,
 .sports-tabs__item--run-active .sports-tabs__icon,
@@ -1479,7 +1479,7 @@ img {
 }
 
 .sports-tabs__item--basketball:hover .sports-tabs__link,
-.sports-tabs__item--backetball-active .sports-tabs__link {
+.sports-tabs__item--basketball-active .sports-tabs__link {
   background-color: var(--basketball);
   border-bottom: 1px solid var(--basketball);
   border-right: 1px solid var(--basketball);
@@ -1872,15 +1872,14 @@ img {
 
 .page-header__title {
   color: var(--white);
-  margin: 0 0 35px 0;
 }
 
 .page-header  {
-  height: 190px;
+  min-height: 190px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 0 114px 0 114px;
+  padding: 55px 114px 35px 114px;
 }
 
 .page-header__container {
@@ -1891,11 +1890,6 @@ img {
 
 .page-header--common {
   background-color: var(--red);
-  padding: 0 114px 35px 114px;
-}
-
-.portfolio__title {
-  margin: 0;
 }
 
 .list-item__top {
@@ -2039,6 +2033,87 @@ span.announcement__item {
   display: inline-block;
 }
 
+/* Список новостей */
+
+.news-tabs {
+  padding: 20px 33px 35px 33px;
+}
+
+.news-list__content {
+  padding: 0 83px;
+}
+
+.news-tabs__text {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--black-opacity);
+  margin: 0 0 20px 0;
+}
+
+.news-tabs__list {
+  list-style: none;
+  display: flex;
+}
+
+.news-tabs__item {
+  margin: 0 10px 0 0;
+}
+
+.news-tabs__link {
+  display: block;
+  padding: 0 10px;
+  line-height: 26px;
+  border: 1px solid var(--gray-additional);
+  color: var(--black);
+}
+
+.news-tabs__item--all:hover .news-tabs__link,
+.news-tabs__item--all-active .news-tabs__link {
+  background-color: var(--red);
+  border: 1px solid var(--red);
+}
+
+.news-tabs__item--football:hover .news-tabs__link,
+.news-tabs__item--football-active .news-tabs__link {
+  background-color: var(--football);
+  border: 1px solid var(--football);
+}
+
+.news-tabs__item--volleyball:hover .news-tabs__link,
+.news-tabs__item--volleyball-active .news-tabs__link {
+  background-color: var(--voleyball);
+  border: 1px solid var(--voleyball);
+}
+
+.news-tabs__item--basketball:hover .news-tabs__link,
+.news-tabs__item--basketball-active .news-tabs__link {
+  background-color: var(--basketball);
+  border: 1px solid var(--basketball);
+}
+
+.news-tabs__item--tennis:hover .news-tabs__link,
+.news-tabs__item--tennis-active .news-tabs__link {
+  background-color: var(--tennis);
+  border: 1px solid var(--tennis);
+}
+
+.news-tabs__item--chess:hover .news-tabs__link,
+.news-tabs__item--chess-active .news-tabs__link {
+  background-color: var(--chess);
+  border: 1px solid var(--chess);
+}
+
+.news-tabs__item--run:hover .news-tabs__link,
+.news-tabs__item--run-active .news-tabs__link {
+  background-color: var(--run);
+  border: 1px solid var(--run);
+}
+
+.news-tabs__item--hockey:hover .news-tabs__link,
+.news-tabs__item--hockey-active .news-tabs__link {
+  background-color: var(--hockey);
+  border: 1px solid var(--hockey);
+}
 
 
 

@@ -1629,7 +1629,7 @@ img {
   margin: 0 0 25px 0;
 }
 
-.tournaments-unit:first-of-type .subtitle {
+.tournaments-unit:first-child>.tournaments-unit__top>.subtitle {
   margin: 0 0 20px 0;
 }
 
@@ -1657,6 +1657,10 @@ img {
 
 .list-item__content {
   padding: 20px 28px 10px 28px;
+}
+
+.vertical-slider .list-item__content {
+  padding: 30px 28px 10px 28px;
 }
 
 .list-item__tag {
@@ -1810,6 +1814,7 @@ img {
 .slider__info-icon {
   flex-shrink: 0;
   margin: 0 15px 0 0;
+  fill: var(--white);
 }
 
 .slider--project .slider__info {
@@ -1857,17 +1862,58 @@ img {
 
 /* Портфолио, список проектов */
 
-.portfolio__title {
+.page-header__title {
   color: var(--white);
+  margin: 0 0 35px 0;
 }
 
-.portfolio__header {
+.page-header  {
   height: 190px;
-  background-color: var(--red);
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  padding: 0 114px 0 114px;
+}
+
+.portfolio__header {
+  background-color: var(--red);
   padding: 0 114px 35px 114px;
+}
+
+.portfolio__title {
+  margin: 0;
+}
+
+.list-item__top {
+  color: var(--white-opacity);
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 0 0 15px 0;
+}
+
+.vertical-slider .list-item__top {
+  margin: 0 0 30px 0;
+}
+
+.list-item__top-container {
+  display: flex;
+  margin: 5px 0 0 0;
+}
+
+.list-item__top-icon {
+  margin: 0 10px 0 0;
+  fill: var(--white-opacity);
+}
+
+.list-item__top-date {
+  margin: 0 0 0 auto;
+}
+
+.list-item__link {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 1px solid var(--white);
 }
 
 

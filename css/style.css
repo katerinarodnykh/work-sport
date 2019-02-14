@@ -2389,6 +2389,50 @@ th {
   padding: 5px 0;
 }
 
+/* Статистика */
+
+.stats__subtitle {
+  padding: 35px 0 15px 0;
+  text-align: center;
+}
+
+.table--stats-football .table__cell--player {
+  width: 350px;
+}
+
+.table--stats-football .table__cell--team {
+  width: 350px;
+}
+
+.table--stats .table__cell--stats {
+  width: 152px;
+}
+
+.table--stats-basketball .table__cell--player-number {
+  width: 120px;
+}
+
+.table--stats-basketball .table__cell--player {
+  width: 350px;
+}
+
+.table--stats-basketball .table__cell--team {
+  width: 350px;
+}
+
+.table--stats-sniper .table__cell--player {
+  width: 230px;
+}
+
+.table--stats-sniper .table__cell--team {
+  width: 230px;
+}
+
+.table--stats-sniper .table__cell--stats {
+  width: 85px;
+}
+
+
 
 
 

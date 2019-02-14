@@ -50,21 +50,188 @@
         <!--TODO-->
         <h1 class="visually-hidden">Название турнира, Work & Sport</h1>
         <section class="news-list">
+            <!--Футбол-->
             <div class="page-header">
                 <p class="breadcrumbs breadcrumbs--sports"><a href="#">Турниры и чемпионаты</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="#">Liga Work & Sport</a>&nbsp;&nbsp;/&nbsp;&nbsp;Футбол&nbsp;&nbsp;/</p>
                 <div class="page-header__container">
                     <h2 class="title page-header__title">Liga Work & Sport 17/18 Зима</h2>
                 </div>
                 <svg class="page-header__icon" width="255" height="255"><use xlink:href="css/img/sprite.svg#football"></use></svg>
+                <!--Для баскетбола и волейбола всё тоже самое, только меняются иконки-->
+                <!--<svg class="page-header__icon" width="255" height="255"><use xlink:href="css/img/sprite.svg#basketball"></use></svg>
+                <svg class="page-header__icon" width="255" height="255"><use xlink:href="css/img/sprite.svg#volleyball"></use></svg>-->
             </div>
         </section>
         <section class="main-tabs">
             <ul class="main-tabs__navigation">
-                <li class="main-tabs__item">Групповой этап</li>
-                <li class="main-tabs__item">Плеф-офф</li>
+                <li class="main-tabs__item main-tabs__item--active">Групповой этап</li>
+                <li class="main-tabs__item">Плей-офф</li>
             </ul>
             <div class="main-tabs__content">
-                <div class="main-tabs__pane"></div>
+                <!--Содержание группового этапа-->
+                <div class="main-tabs__pane">
+                    <section class="container">
+                        <div class="tabs tabs--group">
+                            <ul class="tabs__navigation">
+                                <li class="tabs__item tabs__item--active">Турнирная таблица</li>
+                                <li class="tabs__item">Расписание</li>
+                                <li class="tabs__item">Статистика</li>
+                            </ul>
+                            <div class="tabs__content">
+                                <!--Содержание турнирной таблицы-->
+                                <div class="tabs__pane">
+                                    <!--Футбол-->
+                                    <table class="table table--tournament">
+                                        <thead>
+                                        <tr class="table__head">
+                                            <th class="table__cell table__cell--number">№</th>
+                                            <th class="table__cell table__cell--left table__cell--team" colspan="2">Команда</th>
+                                            <th class="table__cell">Игры</th>
+                                            <th class="table__cell">Выигрыши</th>
+                                            <th class="table__cell">Ничьи</th>
+                                            <th class="table__cell">Поражения</th>
+                                            <th class="table__cell">Мячи</th>
+                                            <th class="table__cell">Разница</th>
+                                            <th class="table__cell">Очки</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr class="table__row">
+                                            <td class="table__cell table__cell--number">1</td>
+                                            <td class="table__cell table__cell--logo">
+                                                <img class="table__img" src="img/all-sports-ball.jpg" width="65" height="26">
+                                            </td>
+                                            <td class="table__cell table__cell--left table__cell--team">
+                                                <a class="table__team" href="#">Команда Ростелеком</a>
+                                            </td>
+                                            <td class="table__cell">11</td>
+                                            <td class="table__cell">4</td>
+                                            <td class="table__cell">2</td>
+                                            <td class="table__cell">10</td>
+                                            <td class="table__cell">5-4</td>
+                                            <td class="table__cell">1</td>
+                                            <td class="table__cell">234</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <!--Баскетбол-->
+                                    <table class="table table--tournament">
+                                        <thead>
+                                        <tr class="table__head">
+                                            <th class="table__cell table__cell--number">№</th>
+                                            <th class="table__cell table__cell--left table__cell--team" colspan="2">Команда</th>
+                                            <th class="table__cell">Игры</th>
+                                            <th class="table__cell">Выигрыши</th>
+                                            <th class="table__cell">Поражения</th>
+                                            <th class="table__cell">Мячи</th>
+                                            <th class="table__cell">Разница</th>
+                                            <th class="table__cell">Очки</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr class="table__row">
+                                            <td class="table__cell table__cell--number">1</td>
+                                            <td class="table__cell table__cell--logo">
+                                                <img class="table__img" src="img/all-sports-ball.jpg" width="65" height="26">
+                                            </td>
+                                            <td class="table__cell table__cell--left table__cell--team">
+                                                <a class="table__team" href="#">Команда Ростелеком</a>
+                                            </td>
+                                            <td class="table__cell">11</td>
+                                            <td class="table__cell">4</td>
+                                            <td class="table__cell">10</td>
+                                            <td class="table__cell">484:398</td>
+                                            <td class="table__cell">86</td>
+                                            <td class="table__cell">23</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <!--Волейбол-->
+                                    <table class="table table--tournament">
+                                        <thead>
+                                        <tr class="table__head">
+                                            <th class="table__cell table__cell--number">№</th>
+                                            <th class="table__cell table__cell--left table__cell--team" colspan="2">Команда</th>
+                                            <th class="table__cell">Игры</th>
+                                            <th class="table__cell">Выигрыши</th>
+                                            <th class="table__cell">Поражения</th>
+                                            <th class="table__cell">Партии</th>
+                                            <th class="table__cell">Мячи</th>
+                                            <th class="table__cell">Разница</th>
+                                            <th class="table__cell">Очки</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr class="table__row">
+                                            <td class="table__cell table__cell--number">1</td>
+                                            <td class="table__cell table__cell--logo">
+                                                <img class="table__img" src="img/all-sports-ball.jpg" width="65" height="26">
+                                            </td>
+                                            <td class="table__cell table__cell--left table__cell--team">
+                                                <a class="table__team" href="#">Команда Ростелеком</a>
+                                            </td>
+                                            <td class="table__cell">11</td>
+                                            <td class="table__cell">4</td>
+                                            <td class="table__cell">2</td>
+                                            <td class="table__cell">4-1</td>
+                                            <td class="table__cell">484:398</td>
+                                            <td class="table__cell">86</td>
+                                            <td class="table__cell">23</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--Содержание расписания-->
+                                <div class="tabs__pane">
+                                    <!--Универсально для всех видов спорта-->
+                                    <table class="table table--schedule">
+                                        <tr class="table__row table__row--color heading">
+                                            <td class="table__cell table__cell--left" colspan="9">Тур 1</td>
+                                        </tr>
+                                        <tr class="table__row table__row--date">
+                                            <td class="table__cell table__cell--left" colspan="9">Воскресенье, 13.05.2018</td>
+                                        </tr>
+                                        <tr class="table__row">
+                                            <td class="table__cell table__cell--time">17:00</td>
+                                            <td class="table__cell table__cell--left table__cell--place">
+                                                <svg class="table__icon" width="14" height="14"><use xlink:href="css/img/sprite.svg#pin"></use></svg>Место проведения
+                                            </td>
+                                            <td class="table__cell table__cell--logo">
+                                                <img class="table__img" src="img/all-sports-ball.jpg" width="65" height="26">
+                                            </td>
+                                            <td class="table__cell table__cell--left table__cell--team">
+                                                <a class="table__team" href="#">Команда Ростелеком</a>
+                                            </td>
+                                            <td class="table__cell">1&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;4</td>
+                                            <td class="table__cell table__cell--score-additional">(5:2)</td>
+                                            <td class="table__cell table__cell--right table__cell--team">
+                                                <a class="table__team" href="#">Команда Ростелеком</a>
+                                            </td>
+                                            <td class="table__cell table__cell--logo">
+                                                <img class="table__img" src="img/all-sports-ball.jpg" width="65" height="26">
+                                            </td>
+                                            <td class="table__cell"></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--Содержание статистики-->
+                                <div class="tabs__pane"></div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="schedule">
+                        <a class="schedule__document" href="#">
+                            <svg class="schedule__icon" width="31" height="40"><use xlink:href="css/img/sprite.svg#document"></use></svg>
+                            <p class="schedule__text">Скачать расписание</p>
+                        </a>
+                        <a class="schedule__document" href="#">
+                            <svg class="schedule__icon" width="31" height="40"><use xlink:href="css/img/sprite.svg#print"></use></svg>
+                            <p class="schedule__text">Распечатать расписание</p>
+                        </a>
+                    </div>
+                </div>
+                <!--Содержание плей-офф-->
                 <div class="main-tabs__pane"></div>
             </div>
         </section>

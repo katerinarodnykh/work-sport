@@ -62,8 +62,8 @@ html {
   --gray-additional: #cccccc;
   --light-gray: #f2f2f2;
   --red: #e94e34;
-  --basketball: #ff6719;
-  --voleyball: #fed84d;
+  --basketball: #ff803f;
+  --volleyball: #fed84d;
   --tennis: #e24235;
   --brain-ring: #3bd3c1;
   --hockey: #81d4f7;
@@ -1473,9 +1473,9 @@ img {
 
 .sports-tabs__item--volleyball:hover .sports-tabs__link,
 .sports-tabs__item--volleyball-active .sports-tabs__link {
-  background-color: var(--voleyball);
-  border-bottom: 1px solid var(--voleyball);
-  border-right: 1px solid var(--voleyball);
+  background-color: var(--volleyball);
+  border-bottom: 1px solid var(--volleyball);
+  border-right: 1px solid var(--volleyball);
 }
 
 .sports-tabs__item--basketball:hover .sports-tabs__link,
@@ -2084,8 +2084,8 @@ span.announcement__item {
 
 .news-tabs__item--volleyball:hover .news-tabs__link,
 .news-tabs__item--volleyball-active .news-tabs__link {
-  background-color: var(--voleyball);
-  border: 1px solid var(--voleyball);
+  background-color: var(--volleyball);
+  border: 1px solid var(--volleyball);
 }
 
 .news-tabs__item--basketball:hover .news-tabs__link,
@@ -2124,6 +2124,14 @@ span.announcement__item {
   background-color: var(--football);
 }
 
+.main-container--basketball .page-header {
+  background-color: var(--basketball);
+}
+
+.main-container--volleyball .page-header {
+  background-color: var(--volleyball);
+}
+
 .breadcrumbs--sports,
 .breadcrumbs--sports a {
   color: var(--black-opacity);
@@ -2137,6 +2145,252 @@ span.announcement__item {
   fill: var(--black);
   opacity: 0.1;
 }
+
+.main-tabs__navigation {
+  height: 40px;
+  line-height: 40px;
+  display: flex;
+  background-color: var(--light-gray);
+  list-style: none;
+}
+
+.main-tabs__item {
+  width: 50%;
+  text-align: center;
+  color: var(--black-opacity);
+  position: relative;
+  cursor: pointer;
+}
+
+.main-tabs__item--active {
+  color: var(--black);
+}
+
+.main-tabs__item--active:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--gray);
+}
+
+.container {
+  padding: 35px 15px 55px 15px;
+}
+
+.tabs__navigation {
+  height: 40px;
+  line-height: 40px;
+  display: flex;
+  list-style: none;
+}
+
+.tabs__item {
+  width: calc(100%/3);
+  position: relative;
+}
+
+.tabs--group .tabs__item {
+  width: 195px;
+  text-align: center;
+}
+
+.tabs__item--active:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.main-container--football .tabs__item--active:after {
+  background-color: var(--football);
+}
+
+.main-container--basketball .tabs__item--active:after {
+  background-color: var(--basketball);
+}
+
+.main-container--volleyball .tabs__item--active:after {
+  background-color: var(--volleyball);
+}
+
+.schedule {
+  height: 56px;
+  background-color: var(--gray);
+  display: flex;
+}
+
+.schedule__document {
+  color: var(--white);
+  padding: 0 25px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.schedule__document:hover {
+  background-color: var(--black);
+  transition: 0.3s;
+}
+
+.schedule__text {
+  width: 100px;
+}
+
+.schedule__icon {
+  margin: 0 35px 0 0;
+  fill: var(--white);
+}
+
+/* Таблицы */
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid var(--gray-additional);
+  border-bottom: 0;
+  border-top: 0;
+}
+
+.table__cell {
+  padding: 5px;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.table__head {
+  height: 40px;
+  color: var(--white);
+}
+
+th {
+  font-weight: 400;
+}
+
+.table__row {
+  height: 40px;
+  border-bottom: 1px solid var(--gray-additional);
+}
+
+.table__img {
+  display: block;
+}
+
+.main-container--football .table__head {
+  background-color: var(--football);
+}
+
+.main-container--basketball .table__head {
+  background-color: var(--basketball);
+}
+
+.main-container--volleyball .table__head {
+  background-color: var(--volleyball);
+}
+
+.table__cell--number {
+  width: 70px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.table__head .table__cell--number {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.table__cell--logo {
+  width: 75px;
+}
+
+.table__cell--left {
+  text-align: left;
+}
+
+.table__cell--right {
+  text-align: right;
+}
+
+.table__team {
+  color: var(--black);
+}
+
+/* Турнирная таблица */
+
+.table--tournament tbody .table__cell--team {
+  width: 400px;
+}
+
+/* Расписание */
+
+.table__row--date {
+  background-color: var(--gray);
+  color: var(--white);
+}
+
+.table__cell--place {
+  color: var(--black-opacity);
+}
+
+.table__icon {
+  fill: var(--gray-additional);
+  margin: 0 5px 0 0;
+}
+
+.table__row--color {
+  color: var(--white);
+  border: 0;
+}
+
+.table__row--date .table__cell,
+.table__row--color .table__cell {
+  padding: 0 30px;
+}
+
+.main-container--football .table__row--color  {
+  background-color: var(--football);
+}
+
+.main-container--basketball .table__row--color  {
+  background-color: var(--basketball);
+}
+
+.main-container--volleyball .table__row--color  {
+  background-color: var(--volleyball);
+}
+
+.table__cell--time {
+  width: 100px;
+}
+
+.table__cell--place {
+  width: 200px;
+  font-size: 12px;
+}
+
+.table--schedule .table__cell--logo {
+  width: 105px;
+  padding: 0 20px;
+}
+
+.table--schedule .table__cell--team {
+  width: 260px;
+}
+
+.table__cell--score-additional {
+  font-size: 12px;
+  color: var(--black-opacity);
+  padding: 5px 0;
+}
+
+
+
 
 
 

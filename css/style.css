@@ -2432,6 +2432,273 @@ th {
   width: 85px;
 }
 
+/* Спецпроекты */
+
+.page-header--specials {
+  height: 240px;
+  background-color: var(--red);
+}
+
+.page-header--specials .page-header__container {
+  align-items: flex-start;
+}
+
+.page-header__text {
+  width: 567px;
+  color: var(--white);
+}
+
+.specials__wrapper {
+  display: flex;
+  padding: 20px 88px 20px 114px;
+}
+
+.specials__wrapper:first-of-type {
+  padding: 55px 88px 0 114px;
+}
+
+.specials__type{
+  color: var(--gray-additional);
+  font-size: 32px;
+  transform: rotate(180deg);
+  writing-mode: tb-rl;
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0 0 0 70px;
+  opacity: 0.6;
+  flex-shrink: 0;
+}
+
+.specials__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.specials__item {
+  width: 280px;
+  height: 280px;
+  margin: 0 15px 15px 0;
+  position: relative;
+  padding: 0 15px;
+  transition: all 0.3s ease-out;
+}
+
+@keyframes square {
+  from {
+    width: 10px;
+    height: 10px;
+  }
+  to {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@keyframes square-back {
+  from {
+    width: 280px;
+    height: 280px;
+  }
+  to {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.specials__square {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background-color: var(--red);
+  z-index: 0;
+  transition: all 1s ease-out;
+}
+
+.specials__item:hover .specials__square {
+  animation: square 0.6s ease-in-out forwards;
+}
+
+.specials__item:not(:hover) .specials__square {
+  animation: square-back 0.6s ease-in-out forwards;
+}
+
+.specials__item--football .specials__square {
+  background-color: var(--football);
+}
+
+.specials__item--volleyball .specials__square {
+  background-color: var(--volleyball);
+}
+
+.specials__item--brain-ring .specials__square {
+  background-color: var(--brain-ring);
+}
+
+.specials__note {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--white-opacity);
+  margin: 10px 0;
+  position: relative;
+  transition: color 0.7s ease-out;
+}
+
+.specials__item--football:hover .specials__note,
+.specials__item--volleyball:hover .specials__note,
+.specials__item--brain-ring:hover .specials__note {
+  color: var(--black-opacity);
+}
+
+.specials__subtitle {
+  margin: 0 0 20px 0;
+  display: block;
+  color: var(--black);
+  min-height: 75px;
+  position: relative;
+  transition: color 0.7s ease-out;
+}
+
+.specials__item:hover .specials__subtitle {
+  color: var(--white);
+  transition: color 0.3s ease-out;
+}
+
+.specials__item--football:hover .specials__subtitle,
+.specials__item--volleyball:hover .specials__subtitle,
+.specials__item--brain-ring:hover .specials__subtitle {
+  color: var(--black);
+  transition: color 0.3s ease-out;
+}
+
+.specials__details {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  color: var(--red);
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
+
+.specials__item:hover .specials__details {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.specials__item--football .specials__details {
+  color: var(--football);
+}
+
+.specials__item--volleyball .specials__details {
+  color: var(--volleyball);
+}
+
+.specials__item--brain-ring .specials__details {
+  color: var(--brain-ring);
+}
+
+.specials__item:hover .specials__details {
+  display: none;
+}
+
+.specials__details-arrow {
+  fill: var(--red);
+  margin: 0 0 0 10px;
+}
+
+.specials__item--football .specials__details-arrow {
+  fill: var(--football);
+}
+
+.specials__item--volleyball .specials__details-arrow {
+  fill: var(--volleyball);
+}
+
+.specials__item--brain-ring .specials__details-arrow {
+  fill: var(--brain-ring);
+}
+
+.specials__info {
+  display: flex;
+  position: absolute;
+  top: 49%;
+  left: 15px;
+  align-items: center;
+  z-index: 2;
+  transition: opacity 0.3s ease-out 0.2s;
+  opacity: 0;
+}
+
+.specials__item:hover .specials__info {
+  opacity: 1;
+  transition: opacity 0.4s ease-out 0.3s;
+}
+
+.specials__price {
+  display: inline-block;
+  background-color: var(--white);
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin: 0 20px 0 0;
+}
+
+.specials__quantity {
+  display: flex;
+  align-items: center;
+  color: var(--white-opacity);
+}
+
+.specials__item--football .specials__quantity,
+.specials__item--volleyball .specials__quantity,
+.specials__item--brain-ring .specials__quantity {
+  color: var(--black-opacity);
+}
+
+.specials__quantity-icon {
+  fill: var(--white-opacity);
+  margin: 0 10px 0 0;
+}
+
+.specials__item--football .specials__quantity-icon,
+.specials__item--volleyball .specials__quantity-icon,
+.specials__item--brain-ring .specials__quantity-icon {
+  fill: var(--black-opacity);
+}
+
+.specials__link {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  border: 1px solid transparent;
+}
+
+.specials__arrow {
+  fill: var(--white);
+}
+
+.specials__link:hover {
+  border: 1px solid var(--white);
+  transition: all 0.3s;
+}
+
+.specials__icon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  fill: var(--black);
+  opacity: 0.1;
+  z-index: 1;
+}
+
 
 
 

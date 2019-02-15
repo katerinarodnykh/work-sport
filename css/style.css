@@ -904,6 +904,7 @@ img {
   z-index: 2;
 }
 
+.breadcrumbs a,
 .slider__breadcrumbs a,
 .page-header--common .breadcrumbs a {
   color: var(--white-opacity);
@@ -2697,6 +2698,111 @@ th {
   fill: var(--black);
   opacity: 0.1;
   z-index: 1;
+}
+
+/* Спецпроект */
+
+.page-header--special {
+  background-color: var(--red);
+}
+
+.page-header--special-brain-ring {
+  background-color: var(--brain-ring);
+}
+
+.page-header--special-football {
+  background-color: var(--football);
+}
+
+.page-header--special-volleyball {
+  background-color: var(--volleyball);
+}
+
+.page-header--special .page-header__container {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.page-header--special .page-header__title {
+  margin: 0 0 20px 0;
+}
+
+.page-header__info {
+  display: flex;
+  align-items: center;
+}
+
+.page-header__price {
+  font-size: 32px;
+  color: var(--white);
+  margin: 0 50px 0 0;
+}
+
+.page-header__button {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.page-header__button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.special {
+  display: flex;
+}
+
+.special__content {
+  padding: 35px 30px 35px 114px;
+  flex-grow: 1;
+}
+
+.special__sidebar {
+  width: 460px;
+  flex-shrink: 0;
+  background-color: var(--gray);
+  padding: 35px 30px 35px 30px;
+}
+
+.special__info {
+  list-style: none;
+  display: flex;
+  width: 576px;
+  justify-content: space-between;
+}
+
+.special__item {
+  width: 166px;
+  height: 155px;
+  margin: 35px 0;
+  border: 3px solid var(--light-gray);
+  padding: 30px 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.special__sidebar {
+  color: var(--white);
+}
+
+.special__sidebar ul {
+  padding: 0 0 0 20px;
+}
+
+.special__icon {
+  text-align: center;
+  fill: rgba(0, 0, 0, 0.1);
+}
+
+.special__item-text {
+  margin: 15px 0 2px 0;
+}
+
+.special__item-text p {
+  text-align: center;
+}
+
+.special__item-teams {
+  font-size: 12px;
 }
 
 

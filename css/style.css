@@ -2155,6 +2155,11 @@ span.announcement__item {
   list-style: none;
 }
 
+.main-tabs--smaller .main-tabs__navigation {
+  height: 50px;
+  line-height: 50px;
+}
+
 .main-tabs__item {
   width: 50%;
   text-align: center;
@@ -2824,6 +2829,75 @@ th {
 
 .special__item-teams {
   font-size: 12px;
+}
+
+/* Команда */
+
+.page-header--team {
+  position: relative;
+  background-size: cover;
+  z-index: 1;
+  height: 240px;
+  justify-content: center;
+}
+
+.page-header--team:after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 0 240px var(--black-opacity) inset;
+  z-index: -1;
+}
+
+.page-header--team .breadcrumbs {
+  margin: 0 0 35px 0;
+}
+
+.page-header--team .page-header__container {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.page-header__img {
+  display: block;
+  margin: 0 30px 0 0;
+}
+
+.team {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.team__img {
+  display: block;
+}
+
+.team__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 35px 114px 30px 30px;
+}
+
+.table__cell--birthday {
+  font-size: 12px;
+  color: var(--black-opacity);
+}
+
+.table--team .table__cell {
+  min-width: 60px;
+}
+
+.table__row--active {
+  background-color: var(--light-gray);
+}
+
+.table__row--active .table__cell {
+  font-weight: 700;
 }
 
 

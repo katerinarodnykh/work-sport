@@ -2595,7 +2595,7 @@ th {
   font-size: 12px;
   line-height: 1.5;
   color: var(--white-opacity);
-  margin: 10px 0;
+  margin: 30px 0 10px 0;
   position: relative;
   transition: color 0.7s ease-out;
 }
@@ -2677,7 +2677,7 @@ th {
 .specials__info {
   display: flex;
   position: absolute;
-  top: 49%;
+  top: 56%;
   left: 15px;
   align-items: center;
   z-index: 2;
@@ -2736,11 +2736,25 @@ th {
 
 .specials__arrow {
   fill: var(--white);
+  transition: fill 0.5s;
+}
+
+.specials__item--football:hover .specials__arrow,
+.specials__item--volleyball:hover .specials__arrow,
+.specials__item--brain-ring:hover .specials__arrow {
+  fill: var(--black);
+  transition: fill 1.7s;
 }
 
 .specials__link:hover {
   border: 1px solid var(--white);
   transition: all 0.3s;
+}
+
+.specials__item--football .specials__link:hover,
+.specials__item--volleyball .specials__link:hover,
+.specials__item--brain-ring .specials__link:hover {
+  border: 1px solid var(--black);
 }
 
 .specials__icon {

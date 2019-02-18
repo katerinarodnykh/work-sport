@@ -2168,6 +2168,11 @@ span.announcement__item {
   cursor: pointer;
 }
 
+.main-tabs__item:hover {
+  color: var(--black);
+  transition: color 0.3s;
+}
+
 .main-tabs__item--active {
   color: var(--black);
 }
@@ -2898,6 +2903,131 @@ th {
 
 .table__row--active .table__cell {
   font-weight: 700;
+}
+
+/* Матч */
+
+.page-header--match {
+  position: relative;
+  background-size: cover;
+  z-index: 1;
+  height: 240px;
+  justify-content: center;
+  padding: 55px 114px 10px 114px;
+}
+
+.page-header--match:after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 0 240px var(--black-opacity) inset;
+  z-index: -1;
+}
+
+.page-header--match .breadcrumbs {
+  margin: 0 0 20px 0;
+}
+
+.page-header--match .page-header__container {
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.page-header__stadium {
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+  padding: 0 10px;
+  font-size: 12px;
+  line-height: 24px;
+  color: var(--black-opacity);
+}
+
+.page-header__stadium-icon {
+  fill: var(--black-opacity);
+  margin: 0 5px 0 0;
+}
+
+.page-header--match .page-header__title {
+  height: 108px;
+}
+
+/* Матч шапка */
+
+.match__header {
+  display: flex;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: var(--light-gray);
+}
+
+.match__team {
+  display: flex;
+  align-items: center;
+  width: 420px;
+}
+
+.match__team-logo,
+.match__team-img {
+  display: block;
+}
+
+.match__team-logo {
+  flex-shrink: 0;
+  margin: 0 30px 0 0;
+}
+
+.match__team--right {
+  justify-content: flex-end;
+}
+
+.match__team--right .match__team-logo {
+  order: 2;
+  margin: 0 0 0 30px;
+}
+
+.match__team-title {
+  color: var(--black);
+}
+
+.match__team--right .match__team-title {
+  text-align: right;
+}
+
+.match__score-container {
+  width: 200px;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.match__date {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--black-opacity);
+  margin: 0 0 5px 0;
+}
+
+.match__score {
+  margin: 0 0 10px 0;
+}
+
+.match__score-additional {
+  font-size: 12px;
+  line-height: 1.25;
+}
+
+.match__status {
+  font-size: 12px;
+  line-height: 24px;
+  color: var(--red);
+  border: 1px solid var(--red);
+  border-radius: 2px;
+  display: inline-block;
+  padding: 0 10px;
 }
 
 

@@ -48,31 +48,53 @@
     <div class="main-container main-container--football">
         <div class="main-content">
         <!--TODO-->
-        <h1 class="visually-hidden">Название команды, Work & Sport</h1>
+        <h1 class="visually-hidden">Вывести то что и в заголовке в шапке, Work & Sport</h1>
         <!--Футбол-->
             <!--Размер изображаения 1180*240-->
-        <div class="page-header page-header--team" style="background-image: url('img/all-sports.jpg')">
+        <div class="page-header page-header--match" style="background-image: url('img/all-sports.jpg')">
             <p class="breadcrumbs"><a href="#">Турниры и чемпионаты</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="#">Liga Work & Sport</a>&nbsp;&nbsp;/&nbsp;&nbsp;Футбол&nbsp;&nbsp;/&nbsp;&nbsp;Liga Work & Sport 17/18 Зима&nbsp;&nbsp;/&nbsp;&nbsp;Команды&nbsp;&nbsp;/</p>
             <div class="page-header__container">
-                <img class="page-header__img" src="img/all-sports-ball.jpg" width="150" height="60">
-                <h2 class="title page-header__title">Сбербанк</h2>
+                <div class="page-header__stadium">
+                    <svg class="page-header__stadium-icon" width="14" height="14"><use xlink:href="css/img/sprite.svg#pin"></use></svg>
+                    <p>СЦ Фабрика Футбола (Софийская ул., 14)</p>
+                </div>
+                <!--Что точно выводится в названии по дизайну непонятно, Турнир-этап или этап-названия команд-->
+                <h2 class="title page-header__title">Liga Work & Sport 17/18 Зима. Тур 1</h2>
             </div>
         </div>
-        <section class="team">
-            <img class="team__img" src="img/ws-about.jpg" width="308" height="308">
-            <div class="team__content">
-                Текст из редактора
-                <a class="worksport-link team__link" href="#">Перейти на сайт компании<svg class="worksport-link__arrow" width="10" height="5"><use xlink:href="css/img/sprite.svg#arrow"></use></svg></a>
+        <section class="match">
+            <div class="match__header">
+                <div class="match__team">
+                    <a class="match__team-logo" href="#">
+                        <img src="img/all-sports.jpg" width="150" height="60">
+                    </a>
+                    <a class="heading match__team-title" href="#">Сбербанк</a>
+                </div>
+                <div class="match__score-container">
+                    <p class="match__date">19.01.2018, Четверг, 21:00 </p>
+                    <div class="match__score">
+                        <div class="title match__score-main">7:6</div>
+                        <div class="match__score-additional">5:4</div>
+                    </div>
+                    <div class="match__status">Матч завершен</div>
+                </div>
+                <div class="match__team match__team--right">
+                    <a class="match__team-logo" href="#">
+                        <img class="match__team-img" src="img/all-sports.jpg" width="150" height="60">
+                    </a>
+                    <a class="heading match__team-title" href="#">Сбербанк</a>
+                </div>
             </div>
+            <div class="match__events"></div>
         </section>
         <section class="main-tabs main-tabs--smaller">
             <ul class="main-tabs__navigation">
-                <li class="main-tabs__item main-tabs__item--active">Состав команды</li>
-                <li class="main-tabs__item">Расписание</li>
-                <li class="main-tabs__item">Турнирная таблица</li>
+                <li class="main-tabs__item main-tabs__item--active">Статистика</li>
+                <li class="main-tabs__item">Состав команд</li>
+                <li class="main-tabs__item">Медиа</li>
             </ul>
             <div class="main-tabs__content">
-                <!--Состав команды-->
+                <!--Содержание статистики-->
                 <div class="main-tabs__pane">
                     <section class="container">
                         <!--Футбол-->
@@ -106,88 +128,13 @@
                             </tr>
                             </tbody>
                         </table>
-                        <!--Баскетбол-->
-                        <table class="table table--team">
-                            <thead>
-                            <tr class="table__head">
-                                <th class="table__cell table__cell--number">№</th>
-                                <th class="table__cell table__cell--left table__cell--player">Игрок</th>
-                                <th class="table__cell table__cell--left">Дата рождения</th>
-                                <th class="table__cell">Кол-во игр</th>
-                                <th class="table__cell">Очки</th>
-                                <th class="table__cell">1х</th>
-                                <th class="table__cell">2х</th>
-                                <th class="table__cell">3х</th>
-                                <th class="table__cell">Передачи</th>
-                                <th class="table__cell">Блоки</th>
-                                <th class="table__cell">Подборы</th>
-                                <th class="table__cell">Лучший игрок</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr class="table__row">
-                                <td class="table__cell table__cell--number">1</td>
-                                <td class="table__cell table__cell--left">Константинопольский Константин</td>
-                                <td class="table__cell table__cell--left table__cell--birthday">08.10.1983</td>
-                                <td class="table__cell">11</td>
-                                <td class="table__cell">4</td>
-                                <td class="table__cell">2</td>
-                                <td class="table__cell">10</td>
-                                <td class="table__cell">5</td>
-                                <td class="table__cell">1</td>
-                                <td class="table__cell">4</td>
-                                <td class="table__cell">4</td>
-                                <td class="table__cell">4</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                        <!--Волейбол-->
-                        <table class="table table--team">
-                            <thead>
-                            <tr class="table__head">
-                                <th class="table__cell table__cell--number">№</th>
-                                <th class="table__cell table__cell--left table__cell--player">Игрок</th>
-                                <th class="table__cell table__cell--left">Дата рождения</th>
-                                <th class="table__cell">Кол-во игр</th>
-                                <th class="table__cell">Рез.атаки</th>
-                                <th class="table__cell">Рез.передачи</th>
-                                <th class="table__cell">Блоки</th>
-                                <th class="table__cell">Рез.подачи</th>
-                                <th class="table__cell">Лучший игрок</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr class="table__row">
-                                <td class="table__cell table__cell--number">1</td>
-                                <td class="table__cell table__cell--left">Константинопольский Константин</td>
-                                <td class="table__cell table__cell--left table__cell--birthday">08.10.1983</td>
-                                <td class="table__cell">11</td>
-                                <td class="table__cell">4</td>
-                                <td class="table__cell">2</td>
-                                <td class="table__cell">10</td>
-                                <td class="table__cell">5</td>
-                                <td class="table__cell">1</td>
-                            </tr>
-                            </tbody>
-                        </table>
                     </section>
-                    <div class="schedule">
-                        <a class="schedule__document" href="#">
-                            <svg class="schedule__icon" width="31" height="40"><use xlink:href="css/img/sprite.svg#document"></use></svg>
-                            <p class="schedule__text">Скачать расписание</p>
-                        </a>
-                        <a class="schedule__document" href="#">
-                            <svg class="schedule__icon" width="31" height="40"><use xlink:href="css/img/sprite.svg#print"></use></svg>
-                            <p class="schedule__text">Распечатать расписание</p>
-                        </a>
-                    </div>
                 </div>
+                <!--Содержание состава команд-->
                 <div class="main-tabs__pane">
-                    <!--Расписание как в турнире-->
                 </div>
-                <div class="main-tabs__pane">
-                    <!--Верстка турнирной таблицы уже есть в турнире + строка команды выделяется с помощью доп. класса table__row--active-->
-                </div>
+                <!--Содержание медии-->
+                <div class="main-tabs__pane"></div>
             </div>
         </section>
         </div>

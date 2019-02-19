@@ -50,7 +50,7 @@
                     <!--TODO-->
                     <h1 class="visually-hidden">Вывести то что и в заголовке в шапке, Work & Sport</h1>
                     <!--Футбол-->
-                        <!--Размер изображаения 1180*240-->
+                    <!--Размер изображаения 1180*240-->
                     <div class="page-header page-header--match" style="background-image: url('img/all-sports.jpg')">
                         <p class="breadcrumbs"><a href="#">Турниры и чемпионаты</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="#">Liga Work & Sport</a>&nbsp;&nbsp;/&nbsp;&nbsp;Футбол&nbsp;&nbsp;/&nbsp;&nbsp;Liga Work & Sport 17/18 Зима&nbsp;&nbsp;/&nbsp;&nbsp;Команды&nbsp;&nbsp;/</p>
                         <div class="page-header__container">
@@ -76,7 +76,10 @@
                                     <div class="title match__score-main">7:6</div>
                                     <div class="match__score-additional">5:4</div>
                                 </div>
-                                <div class="match__status">Матч завершен</div>
+                                <!--У матча 3 состояния-->
+                                <div class="match__status">Будущий матч</div>
+                                <div class="match__status match__status--live">Матч идёт</div>
+                                <div class="match__status match__status--end">Матч завершен</div>
                             </div>
                             <div class="match__team match__team--right">
                                 <a class="match__team-logo" href="#">
@@ -86,18 +89,135 @@
                             </div>
                         </div>
                         <div class="match__events">
-
+                            <!--Футбол-->
+                            <ul class="timeline">
+                                <li class="timeline__item">
+                                    <div class="timeline__part">
+                                        <div class="match__event">
+                                            <div class="match__event-text">
+                                                <p class="match__event-author">Яроватый Александр</p>
+                                                <p class="match__event-assist"><svg class="match__event-icon" width="10" height="10"><use xlink:href="css/img/sprite.svg#assist"></use></svg>Храмов Александр</p>
+                                            </div>
+                                            <div class="match__event-content">
+                                                <svg class="match__event-icon" width="10" height="10"><use xlink:href="css/img/sprite.svg#goal"></use></svg>
+                                                <span class="match__event-score">2:2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline__center">
+                                        <div class="heading timeline__time">2'</div>
+                                    </div>
+                                    <div class="timeline__part timeline__part--right">
+                                        <div class="match__event">
+                                            <div class="match__event-text">
+                                                <p class="match__event-author">Яроватый Александр</p>
+                                                <p class="match__event-assist"><svg class="match__event-icon" width="10" height="10"><use xlink:href="css/img/sprite.svg#assist"></use></svg>Храмов Александр</p>
+                                            </div>
+                                            <div class="match__event-content">
+                                                <svg class="match__event-icon" width="10" height="10"><use xlink:href="css/img/sprite.svg#autogoal"></use></svg>
+                                                <span class="match__event-score">0:2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline__item">
+                                    <div class="timeline__part">
+                                        <div class="match__event">
+                                            <div class="match__event-text">
+                                                <p class="match__event-author">Яроватый Александр</p>
+                                                <p class="match__event-assist"></p>
+                                            </div>
+                                            <div class="match__event-content">
+                                                <svg class="match__event-icon" width="10" height="10"><use xlink:href="css/img/sprite.svg#penalty"></use></svg>
+                                                <span class="match__event-score">2:2</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline__center">
+                                        <div class="heading timeline__time">11'</div>
+                                    </div>
+                                    <div class="timeline__part timeline__part--right"></div>
+                                </li>
+                                <li class="timeline__item">
+                                    <div class="timeline__part">
+                                        <div class="match__event">
+                                            <div class="match__event-text">
+                                                <p class="match__event-author">Яроватый Александр</p>
+                                                <p class="match__event-assist"></p>
+                                            </div>
+                                            <div class="match__event-content match__event-content--card">
+                                                <svg class="match__event-icon" width="13" height="25"><use xlink:href="css/img/sprite.svg#red-card"></use></svg>
+                                                <span class="match__event-score"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="timeline__center">
+                                        <div class="heading timeline__time">15'</div>
+                                    </div>
+                                    <div class="timeline__part timeline__part--right">
+                                        <div class="match__event">
+                                            <div class="match__event-text">
+                                                <p class="match__event-author">Яроватый Александр</p>
+                                                <p class="match__event-assist"></p>
+                                            </div>
+                                            <div class="match__event-content match__event-content--card">
+                                                <svg class="match__event-icon" width="13" height="25"><use xlink:href="css/img/sprite.svg#yellow-card"></use></svg>
+                                                <span class="match__event-score"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <!--У timeline задана max-height: 280px;, при нажатии на ссылку показывается всё, либо ограничить количество показываемых событий -->
+                            <a class="match__more" href="#">
+                                Все события матча...<svg class="match__more-icon" width="6" height="5"><use xlink:href="css/img/sprite.svg#select"></use></svg>
+                            </a>
+                            <!--Баскетбол-->
+                            <ul class="timeline">
+                                <li class="timeline__item">
+                                    <div class="timeline__part">21</div>
+                                    <div class="timeline__center">
+                                        <div class="heading timeline__time">ч1</div>
+                                    </div>
+                                    <div class="timeline__part timeline__part--right">14</div>
+                                </li>
+                                <li class="timeline__item">
+                                    <div class="timeline__part">21</div>
+                                    <div class="timeline__center">
+                                        <div class="heading timeline__time">ч2</div>
+                                    </div>
+                                    <div class="timeline__part timeline__part--right">14</div>
+                                </li>
+                                <li class="timeline__item">
+                                    <div class="timeline__part">21</div>
+                                    <div class="timeline__center">
+                                        <div class="heading timeline__time">ч3</div>
+                                    </div>
+                                    <div class="timeline__part timeline__part--right">14</div>
+                                </li>
+                                <li class="timeline__item">
+                                    <div class="timeline__part">21</div>
+                                    <div class="timeline__center">
+                                        <div class="heading timeline__time">ч4</div>
+                                    </div>
+                                    <div class="timeline__part timeline__part--right">14</div>
+                                </li>
+                            </ul>
+                            <a class="match__more" href="#">
+                                <svg class="match__more-icon" width="16" height="20"><use xlink:href="css/img/sprite.svg#document"></use></svg>Вся статистика матча
+                            </a>
+                            <!--Волейбол: нет событий-->
                         </div>
                     </section>
-                    <section class="main-tabs main-tabs--smaller">
-                        <ul class="main-tabs__navigation">
-                            <li class="main-tabs__item main-tabs__item--active">Статистика</li>
-                            <li class="main-tabs__item">Состав команд</li>
-                            <li class="main-tabs__item">Медиа</li>
+                    <section class="match-tabs">
+                        <ul class="match-tabs__navigation">
+                            <li class="match-tabs__item match-tabs__item--active">Статистика</li>
+                            <li class="match-tabs__item">Состав команд</li>
+                            <li class="match-tabs__item">Медиа</li>
                         </ul>
-                        <div class="main-tabs__content">
+                        <div class="match-tabs__content">
                             <!--Содержание статистики-->
-                            <div class="main-tabs__pane">
+                            <div class="match-tabs__pane">
                                 <section class="container">
                                     <!--Футбол-->
                                     <table class="table table--team">
@@ -133,10 +253,10 @@
                                 </section>
                             </div>
                             <!--Содержание состава команд-->
-                            <div class="main-tabs__pane">
+                            <div class="match-tabs__pane">
                             </div>
                             <!--Содержание медии-->
-                            <div class="main-tabs__pane"></div>
+                            <div class="match-tabs__pane"></div>
                         </div>
                     </section>
                 </div>

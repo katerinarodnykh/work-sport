@@ -1423,9 +1423,10 @@ img {
 
 /* Лига  Work & Sport */
 
-.sports-tabs__navigation {
+.sports-tabs {
   display: flex;
   list-style: none;
+  position: relative;
 }
 
 .sports-tabs__item {
@@ -1524,6 +1525,11 @@ img {
   border-right: 1px solid var(--hockey);
 }
 
+.sports-tabs__navigation {
+  display: flex;
+  list-style: none;
+}
+
 .sports-tabs--slider .sports-tabs__navigation {
   overflow: hidden;
 }
@@ -1537,10 +1543,6 @@ img {
 .sports-tabs--slider .sports-tabs__link {
   white-space: nowrap;
   padding: 0 20px;
-}
-
-.sports-tabs__top {
-  position: relative;
 }
 
 .sports-tabs__control {

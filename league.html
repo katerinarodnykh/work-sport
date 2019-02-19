@@ -77,9 +77,37 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="sports-tabs">
+                        <ul class="sports-tabs">
+                            <li class="sports-tabs__item sports-tabs__item--football">
+                                <a class="sports-tabs__link" href="#">
+                                    <svg class="sports-tabs__icon" width="42" height="42"><use xlink:href="css/img/sprite.svg#football"></use></svg>
+                                    <span class="heading sports-tabs__heading">Футбол</span>
+                                </a>
+                            </li>
+                            <li class="sports-tabs__item sports-tabs__item--volleyball">
+                                <a class="sports-tabs__link" href="#">
+                                    <svg class="sports-tabs__icon" width="42" height="42"><use xlink:href="css/img/sprite.svg#volleyball"></use></svg>
+                                    <span class="heading sports-tabs__heading">Волейбол</span>
+                                </a>
+                            </li>
+                            <li class="sports-tabs__item sports-tabs__item--basketball">
+                                <a class="sports-tabs__link" href="#">
+                                    <svg class="sports-tabs__icon" width="42" height="42"><use xlink:href="css/img/sprite.svg#basketball"></use></svg>
+                                    <span class="heading sports-tabs__heading">Баскетбол</span>
+                                </a>
+                            </li>
+                            <li class="sports-tabs__item sports-tabs__item--all sports-tabs__item--all-active">
+                                <a class="sports-tabs__link" href="#">
+                                    <span class="heading sports-tabs__heading">Все виды спорта</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="sports-tabs sports-tabs--slider">
+                            <!--По дизайну сначала не отображается, появляется только после того как есть возможность прокрутить назад-->
+                            <a class="sports-tabs__control sports-tabs__control--back" href="#"><svg class="sports-tabs__arrow" width="17" height="7"><use  xlink:href="css/img/sprite.svg#arrow"></use></svg></a>
                             <ul class="sports-tabs__navigation">
-                                <li class="sports-tabs__item sports-tabs__item--football">
+                                <!--Для активного таба добавляется -active в классе модификатора-->
+                                <li class="sports-tabs__item sports-tabs__item--football-active">
                                     <a class="sports-tabs__link" href="#">
                                         <svg class="sports-tabs__icon" width="42" height="42"><use xlink:href="css/img/sprite.svg#football"></use></svg>
                                         <span class="heading sports-tabs__heading">Футбол</span>
@@ -91,76 +119,38 @@
                                         <span class="heading sports-tabs__heading">Волейбол</span>
                                     </a>
                                 </li>
+                                <li class="sports-tabs__item sports-tabs__item--tennis">
+                                    <a class="sports-tabs__link" href="#">
+                                        <svg class="sports-tabs__icon" width="42" height="42"><use xlink:href="css/img/sprite.svg#tennis"></use></svg>
+                                        <span class="heading sports-tabs__heading">Настольный теннис</span>
+                                    </a>
+                                </li>
                                 <li class="sports-tabs__item sports-tabs__item--basketball">
                                     <a class="sports-tabs__link" href="#">
                                         <svg class="sports-tabs__icon" width="42" height="42"><use xlink:href="css/img/sprite.svg#basketball"></use></svg>
                                         <span class="heading sports-tabs__heading">Баскетбол</span>
                                     </a>
                                 </li>
-                                <li class="sports-tabs__item sports-tabs__item--all sports-tabs__item--all-active">
+                                <li class="sports-tabs__item sports-tabs__item--chess">
                                     <a class="sports-tabs__link" href="#">
-                                        <span class="heading sports-tabs__heading">Все виды спорта</span>
+                                        <svg class="sports-tabs__icon" width="42" height="42"><use xlink:href="css/img/sprite.svg#chess"></use></svg>
+                                        <span class="heading sports-tabs__heading">Шахматы</span>
+                                    </a>
+                                </li>
+                                <li class="sports-tabs__item sports-tabs__item--run">
+                                    <a class="sports-tabs__link" href="#">
+                                        <svg class="sports-tabs__icon" width="42" height="42"><use xlink:href="css/img/sprite.svg#run"></use></svg>
+                                        <span class="heading sports-tabs__heading">Забеги</span>
+                                    </a>
+                                </li>
+                                <li class="sports-tabs__item sports-tabs__item--hockey">
+                                    <a class="sports-tabs__link" href="#">
+                                        <svg class="sports-tabs__icon" width="42" height="42"><use xlink:href="css/img/sprite.svg#hockey"></use></svg>
+                                        <span class="heading sports-tabs__heading">Забеги</span>
                                     </a>
                                 </li>
                             </ul>
-                            <div class="sports-tabs__content">
-                                <div class="sports-tabs__pane"></div>
-                            </div>
-                        </div>
-                        <div class="sports-tabs sports-tabs--slider">
-                            <div class="sports-tabs__top">
-                                <!--По дизайну сначала не отображается, появляется только после того как есть возможность прокрутить назад-->
-                                <a class="sports-tabs__control sports-tabs__control--back" href="#"><svg class="sports-tabs__arrow" width="17" height="7"><use  xlink:href="css/img/sprite.svg#arrow"></use></svg></a>
-                                <ul class="sports-tabs__navigation">
-                                    <!--Для активного таба добавляется -active в классе модификатора-->
-                                    <li class="sports-tabs__item sports-tabs__item--football-active">
-                                        <a class="sports-tabs__link" href="#">
-                                            <svg class="sports-tabs__icon" width="42" height="42"><use xlink:href="css/img/sprite.svg#football"></use></svg>
-                                            <span class="heading sports-tabs__heading">Футбол</span>
-                                        </a>
-                                    </li>
-                                    <li class="sports-tabs__item sports-tabs__item--volleyball">
-                                        <a class="sports-tabs__link" href="#">
-                                            <svg class="sports-tabs__icon" width="42" height="42"><use xlink:href="css/img/sprite.svg#volleyball"></use></svg>
-                                            <span class="heading sports-tabs__heading">Волейбол</span>
-                                        </a>
-                                    </li>
-                                    <li class="sports-tabs__item sports-tabs__item--tennis">
-                                        <a class="sports-tabs__link" href="#">
-                                            <svg class="sports-tabs__icon" width="42" height="42"><use xlink:href="css/img/sprite.svg#tennis"></use></svg>
-                                            <span class="heading sports-tabs__heading">Настольный теннис</span>
-                                        </a>
-                                    </li>
-                                    <li class="sports-tabs__item sports-tabs__item--basketball">
-                                        <a class="sports-tabs__link" href="#">
-                                            <svg class="sports-tabs__icon" width="42" height="42"><use xlink:href="css/img/sprite.svg#basketball"></use></svg>
-                                            <span class="heading sports-tabs__heading">Баскетбол</span>
-                                        </a>
-                                    </li>
-                                    <li class="sports-tabs__item sports-tabs__item--chess">
-                                        <a class="sports-tabs__link" href="#">
-                                            <svg class="sports-tabs__icon" width="42" height="42"><use xlink:href="css/img/sprite.svg#chess"></use></svg>
-                                            <span class="heading sports-tabs__heading">Шахматы</span>
-                                        </a>
-                                    </li>
-                                    <li class="sports-tabs__item sports-tabs__item--run">
-                                        <a class="sports-tabs__link" href="#">
-                                            <svg class="sports-tabs__icon" width="42" height="42"><use xlink:href="css/img/sprite.svg#run"></use></svg>
-                                            <span class="heading sports-tabs__heading">Забеги</span>
-                                        </a>
-                                    </li>
-                                    <li class="sports-tabs__item sports-tabs__item--hockey">
-                                        <a class="sports-tabs__link" href="#">
-                                            <svg class="sports-tabs__icon" width="42" height="42"><use xlink:href="css/img/sprite.svg#hockey"></use></svg>
-                                            <span class="heading sports-tabs__heading">Забеги</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <a class="sports-tabs__control" href="#"><svg class="sports-tabs__arrow" width="17" height="7"><use  xlink:href="css/img/sprite.svg#arrow"></use></svg></a>
-                            </div>
-                            <div class="sports-tabs__content">
-                                <div class="sports-tabs__pane"></div>
-                            </div>
+                            <a class="sports-tabs__control" href="#"><svg class="sports-tabs__arrow" width="17" height="7"><use  xlink:href="css/img/sprite.svg#arrow"></use></svg></a>
                         </div>
                         <div class="tournaments">
                             <div class="tournaments-unit">

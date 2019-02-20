@@ -3241,7 +3241,11 @@ th {
   z-index: 2;
 }
 
+/* Статистика матча */
 
+.table--match-stats .table__cell {
+  width: calc(100%/3);
+}
 
 
 

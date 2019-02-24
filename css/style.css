@@ -182,6 +182,7 @@ img {
 .header {
   width: 260px;
   flex-shrink: 0;
+  position: relative;
 }
 
 .header__container {
@@ -204,21 +205,50 @@ img {
   width: 100%;
 }
 
+.navigation__list {
+  list-style: none;
+}
+
 .navigation__link {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 12px;
   font-weight: 600;
   line-height: 40px;
   letter-spacing: 0.3px;
   color: var(--white);
   text-transform: uppercase;
-  padding: 0 0 0 30px;
+  padding: 0 30px 0 30px;
   border-left: 1px solid var(--black);
+  transition: 0.3s;
 }
 
 .navigation__link:hover {
   background-color: var(--white);
   color: var(--black);
+  transition: 0.3s;
+}
+
+/* Подменю */
+
+.submenu {
+  display: none;
+  width: 1180px;
+  height: 800px;
+  background-color: var(--white);
+  position: absolute;
+  left: 260px;
+  top: 0;
+  border-right: 1px solid var(--gray-additional);
+}
+
+.navigation__item:first-child:hover .submenu {
+  display: block;
+}
+
+.navigation__arrow {
+  fill: var(--black);
 }
 
 .header__info {

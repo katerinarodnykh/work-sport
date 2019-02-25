@@ -3119,15 +3119,20 @@ th {
 }
 
 .match__events {
-  padding: 15px 80px 10px 80px;
+  padding: 15px 0 10px 0;
   background-color: rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
+.match__events-wrapper {
+  max-height: 275px;
+  overflow: hidden;
+  padding: 0 80px;
+}
+
 .timeline {
   list-style: none;
-  max-height: 265px;
-  overflow: hidden;
+  padding: 0 0 15px 0;
 }
 
 .timeline__item {
@@ -3168,7 +3173,7 @@ th {
   align-items: center;
   color: var(--black-opacity);
   font-size: 12px;
-  margin: 15px 0 0 0;
+  margin: 10px 0 0 0;
 }
 
 .match__more-icon {
@@ -3176,14 +3181,17 @@ th {
   margin: 0 10px;
 }
 
+.match__more--active .match__more-icon {
+  transform: rotate(180deg);
+}
+
 .match__event {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
 }
 
-.timeline__part--right .match__event  {
-  justify-content: flex-start;
+.timeline__part--left .match__event {
+  justify-content: flex-end;
 }
 
 .timeline__part--right .match__event-text {
@@ -3212,6 +3220,7 @@ th {
   padding: 0 5px;
   background-color: var(--football);
   border-radius: 12px;
+  min-width: 44px;
 }
 
 .match__event-icon {
@@ -3219,13 +3228,57 @@ th {
 }
 
 .match__event-content--card {
-  min-width: 44px;
   background-color: var(--white);
   justify-content: center;
 }
 
 .match__event-content--card .match__event-icon {
   margin: 0;
+}
+
+.match__penalty {
+  position: relative;
+}
+
+.match__penalty::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -80px;
+  width: 1180px;
+  height: 1px;
+  border-top: 2px dotted var(--gray-additional);
+}
+
+.match__penalty-title {
+  font-size: 16px;
+  line-height: 1.75;
+  padding: 10px 0;
+  font-family: "Source Sans Pro", "Arial", sans-serif;
+}
+
+.timeline__penalty-score {
+  display: inline-block;
+  width: 80px;
+  height: 36px;
+  line-height: 34px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.match__penalty .match__event-content {
+  background-color: transparent;
+  padding: 0;
+  font-size: 12px;
+  color: var(--black-opacity);
+}
+
+.match__penalty .timeline__part--left .match__event-content {
+  justify-content: flex-end;
+}
+
+.match__penalty .match__event-author {
+  line-height: 26px;
 }
 
 .match-tabs__navigation {

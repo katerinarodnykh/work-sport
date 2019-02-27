@@ -224,6 +224,7 @@ img {
   transition: 0.3s;
 }
 
+.navigation__item--active
 .navigation__link:hover {
   background-color: var(--white);
   color: var(--black);
@@ -1911,12 +1912,12 @@ img {
 }
 
 .photo {
-  padding: 35px 0 55px 100px;
   background-color: var(--light-gray);
+  padding-bottom: 55px;
 }
 
 .photo__subtitle {
-  margin: 0 0 35px 0;
+  padding: 35px 0 53px 114px;
 }
 
 /* Портфолио, список проектов */

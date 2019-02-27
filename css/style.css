@@ -3430,6 +3430,12 @@ th {
   color: var(--white);
 }
 
+/* Однодневный турнир */
+
+.padding-container {
+  padding: 35px 114px;
+}
+
 
 
 

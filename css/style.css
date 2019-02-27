@@ -175,6 +175,10 @@ img {
   font-weight: 400;
 }
 
+.button--dark {
+  background-color: var(--gray);
+}
+
 .button--disabled {
   background-color: var(--gray-additional);
 }
@@ -183,6 +187,7 @@ img {
   width: 260px;
   flex-shrink: 0;
   position: relative;
+  z-index: 100;
 }
 
 .header__container {
@@ -224,7 +229,7 @@ img {
   transition: 0.3s;
 }
 
-.navigation__item--active
+.navigation__item--active .navigation__link,
 .navigation__link:hover {
   background-color: var(--white);
   color: var(--black);
@@ -234,18 +239,146 @@ img {
 /* Подменю */
 
 .submenu {
-  display: none;
   width: 1180px;
   height: 800px;
   background-color: var(--white);
   position: absolute;
   left: 260px;
   top: 0;
+  padding: 160px 110px 80px 114px;
   border-right: 1px solid var(--gray-additional);
+  opacity: 0;
 }
 
 .navigation__item:first-child:hover .submenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 1;
+  animation: submenu-open 0.3s ease-in-out forwards;
+}
+
+.navigation__item:first-child:not(:hover) .submenu {
+  animation: submenu-close 0.3s ease-in-out forwards;
+}
+
+@keyframes submenu-open {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes submenu-close {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.submenu__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submenu__heading {
   display: block;
+  color: var(--black);
+  margin: 0 0 46px 0;
+}
+
+.submenu__navigation {
+  list-style: none;
+  margin: 0 0 27px 0;
+}
+
+.submenu__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 270px;
+  height: 40px;
+  text-transform: uppercase;
+  color: var(--black);
+  padding: 0 30px 0 15px;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.submenu__worksport-link {
+  margin: 0 0 0 15px;
+}
+
+.submenu__icon-link {
+  margin: 0 0 0 10px;
+}
+
+.submenu__item:hover .submenu__link {
+  transition: 0.2s;
+}
+
+.submenu__item--football:hover .submenu__link {
+  background-color: var(--football);
+}
+
+.submenu__item--basketball:hover .submenu__link {
+  background-color: var(--basketball);
+}
+
+.submenu__item--volleyball:hover .submenu__link {
+  background-color: var(--volleyball);
+}
+
+.submenu__item--tennis:hover .submenu__link {
+  background-color: var(--tennis);
+}
+
+.submenu__item--chess:hover .submenu__link {
+  background-color: var(--chess);
+}
+
+.submenu__item--run:hover .submenu__link {
+  background-color: var(--run);
+}
+
+.submenu__item--hockey:hover .submenu__link {
+  background-color: var(--hockey);
+}
+
+.submenu__icons {
+  display: none;
+}
+
+.submenu__item:hover .submenu__icons {
+  display: flex;
+  align-items: center;
+  transition: 0.2s;
+}
+
+.submenu__icon {
+  fill: var(--black);
+}
+
+.submenu__button {
+  display: block;
+  margin: 0 0 24px 0;
+  width: 170px;
+}
+
+.submenu__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px 20px 30px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.submenu__bottom-text {
+  width: 626px;
 }
 
 .navigation__arrow {

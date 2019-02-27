@@ -1667,6 +1667,13 @@ img {
   fill: var(--white);
 }
 
+.select--float {
+  float: right;
+  position: relative;
+  right: 110px;
+  top: 35px;
+}
+
 .tournaments {
   padding: 0 0 55px 0;
 }

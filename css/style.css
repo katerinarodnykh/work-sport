@@ -239,6 +239,7 @@ img {
 /* Подменю */
 
 .submenu {
+  display: none;
   width: 1180px;
   height: 800px;
   background-color: var(--white);
@@ -247,37 +248,12 @@ img {
   top: 0;
   padding: 160px 110px 80px 114px;
   border-right: 1px solid var(--gray-additional);
-  opacity: 0;
 }
 
-.navigation__item:first-child:hover .submenu {
+.navigation__item:hover .submenu {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  opacity: 1;
-  animation: submenu-open 0.3s ease-in-out forwards;
-}
-
-.navigation__item:first-child:not(:hover) .submenu {
-  animation: submenu-close 0.3s ease-in-out forwards;
-}
-
-@keyframes submenu-open {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes submenu-close {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
 }
 
 .submenu__content {

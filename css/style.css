@@ -2686,6 +2686,7 @@ th {
   position: relative;
   padding: 0 15px;
   transition: all 0.3s ease-out;
+  overflow: hidden;
 }
 
 @keyframes square {
@@ -2739,6 +2740,23 @@ th {
 
 .specials__item--brain-ring .specials__square {
   background-color: var(--brain-ring);
+}
+
+.specials__item--birthday .specials__icon {
+  width: 191px;
+  height: 165px;
+}
+
+.specials__item--gto .specials__icon {
+  bottom: -20px;
+  left: -20px;
+}
+
+.specials__item--family .specials__icon {
+  width: 180px;
+  height: 180px;
+  bottom: -20px;
+  left: -25px;
 }
 
 .specials__note {

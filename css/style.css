@@ -2743,8 +2743,9 @@ th {
 }
 
 .specials__item--birthday .specials__icon {
-  width: 191px;
-  height: 165px;
+  width: 180px;
+  height: 180px;
+  bottom: -12px;
 }
 
 .specials__item--gto .specials__icon {
@@ -2950,6 +2951,19 @@ th {
 
 .page-header--special-volleyball {
   background-color: var(--volleyball);
+}
+
+.page-header--special-tennis .page-header__icon,
+.page-header--special-family .page-header__icon,
+.page-header--special-gto .page-header__icon {
+  width: 300px;
+  height: 300px;
+}
+
+.page-header--special-birthday .page-header__icon,
+.page-header--special-spartakiad .page-header__icon {
+  width: 250px;
+  height: 250px;
 }
 
 .page-header--special .page-header__container {

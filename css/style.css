@@ -325,6 +325,10 @@ img {
   background-color: var(--hockey);
 }
 
+.submenu__item--brain-ring:hover .submenu__link {
+  background-color: var(--brain-ring);
+}
+
 .submenu__icons {
   display: none;
 }
@@ -1664,6 +1668,13 @@ img {
   background-color: var(--hockey);
   border-bottom: 1px solid var(--hockey);
   border-right: 1px solid var(--hockey);
+}
+
+.sports-tabs__item--brain-ring:hover .sports-tabs__link,
+.sports-tabs__item--brain-ring-active .sports-tabs__link {
+  background-color: var(--hockey);
+  border-bottom: 1px solid var(--brain-ring);
+  border-right: 1px solid var(--brain-ring);
 }
 
 .sports-tabs__navigation {

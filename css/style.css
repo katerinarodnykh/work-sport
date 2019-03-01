@@ -3593,7 +3593,6 @@ th {
   height: 360px;
   position: relative;
   flex-shrink: 0;
-  /*box-shadow: 0 0 0 240px var(--black-opacity) inset;*/
 }
 
 .news-item__content,
@@ -3673,6 +3672,68 @@ th {
 .news-item__tag--hockey:after {
   background-color: var(--hockey);
 }
+
+.news-item__tag--brain-ring:after {
+  background-color: var(--brain-ring);
+}
+
+/* Новость */
+
+.news .breadcrumbs,
+.news .breadcrumbs a {
+  color: var(--black-opacity);
+}
+
+.news__container {
+  padding: 55px 114px;
+}
+
+.news__title {
+  width: 675px;
+  padding: 25px 0 35px 0;
+  margin: 0;
+}
+
+.news__info {
+  display: flex;
+}
+
+.news__info .news-item__date {
+  margin: 0 30px 0 0;
+}
+
+.news__content {
+  margin: 55px 0 0 0;
+  position: relative;
+}
+
+.news__content:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.news__description {
+  font-weight: 700;
+  margin: 0 0 30px 0;
+}
+
+.news__img {
+  width: 460px;
+  display: block;
+  float: right;
+  margin: 0 0 30px 30px;
+}
+
+.news__link {
+  display: block;
+  margin: 30px 0 0 0;
+  font-weight: 700;
+}
+
+
+
+
 
 
 

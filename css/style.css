@@ -2234,6 +2234,12 @@ span.announcement__item {
   line-height: 26px;
   border: 1px solid var(--gray-additional);
   color: var(--black);
+  transition: 0.3s;
+}
+
+.news-tabs__item:hover .news-tabs__link,
+.news-tabs__item.news-tabs__item--active .news-tabs__link {
+  transition: 0.3s;
 }
 
 .news-tabs__item--all:hover .news-tabs__link,
@@ -2280,6 +2286,12 @@ span.announcement__item {
 
 .news-tabs__item--hockey:hover .news-tabs__link,
 .news-tabs__item--hockey.news-tabs__item--active .news-tabs__link {
+  background-color: var(--hockey);
+  border: 1px solid var(--hockey);
+}
+
+.news-tabs__item--brain-ring:hover .news-tabs__link,
+.news-tabs__item--brain-ring.news-tabs__item--active .news-tabs__link {
   background-color: var(--hockey);
   border: 1px solid var(--hockey);
 }

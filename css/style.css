@@ -2770,6 +2770,10 @@ th {
   background-color: var(--brain-ring);
 }
 
+.specials__item--winter .specials__square {
+  background-color: var(--hockey);
+}
+
 .specials__item--birthday .specials__icon {
   width: 180px;
   height: 180px;
@@ -2788,6 +2792,11 @@ th {
   left: -25px;
 }
 
+.specials__item--winter .specials__icon {
+  width: 170px;
+  height: 170px;
+}
+
 .specials__note {
   font-size: 12px;
   line-height: 1.5;
@@ -2799,7 +2808,8 @@ th {
 
 .specials__item--football:hover .specials__note,
 .specials__item--volleyball:hover .specials__note,
-.specials__item--brain-ring:hover .specials__note {
+.specials__item--brain-ring:hover .specials__note,
+.specials__item--winter:hover .specials__note {
   color: var(--black-opacity);
 }
 
@@ -2819,7 +2829,8 @@ th {
 
 .specials__item--football:hover .specials__subtitle,
 .specials__item--volleyball:hover .specials__subtitle,
-.specials__item--brain-ring:hover .specials__subtitle {
+.specials__item--brain-ring:hover .specials__subtitle,
+.specials__item--winter:hover .specials__subtitle {
   color: var(--black);
   transition: color 0.3s ease-out;
 }
@@ -2850,6 +2861,10 @@ th {
   color: var(--brain-ring);
 }
 
+.specials__item--winter .specials__details {
+  color: var(--hockey);
+}
+
 .specials__item:hover .specials__details {
   display: none;
 }
@@ -2869,6 +2884,10 @@ th {
 
 .specials__item--brain-ring .specials__details-arrow {
   fill: var(--brain-ring);
+}
+
+.specials__item--winter .specials__details-arrow {
+  fill: var(--hockey);
 }
 
 .specials__info {
@@ -2903,7 +2922,8 @@ th {
 
 .specials__item--football .specials__quantity,
 .specials__item--volleyball .specials__quantity,
-.specials__item--brain-ring .specials__quantity {
+.specials__item--brain-ring .specials__quantity,
+.specials__item--winter .specials__quantity {
   color: var(--black-opacity);
 }
 
@@ -2914,7 +2934,8 @@ th {
 
 .specials__item--football .specials__quantity-icon,
 .specials__item--volleyball .specials__quantity-icon,
-.specials__item--brain-ring .specials__quantity-icon {
+.specials__item--brain-ring .specials__quantity-icon,
+.specials__item--winter .specials__quantity-icon {
   fill: var(--black-opacity);
 }
 
@@ -2938,7 +2959,8 @@ th {
 
 .specials__item--football:hover .specials__arrow,
 .specials__item--volleyball:hover .specials__arrow,
-.specials__item--brain-ring:hover .specials__arrow {
+.specials__item--brain-ring:hover .specials__arrow,
+.specials__item--winter:hover .specials__arrow {
   fill: var(--black);
   transition: fill 1.7s;
 }
@@ -2950,7 +2972,8 @@ th {
 
 .specials__item--football .specials__link:hover,
 .specials__item--volleyball .specials__link:hover,
-.specials__item--brain-ring .specials__link:hover {
+.specials__item--brain-ring .specials__link:hover,
+.specials__item--winter .specials__link:hover {
   border: 1px solid var(--black);
 }
 
@@ -2981,6 +3004,10 @@ th {
   background-color: var(--volleyball);
 }
 
+.page-header--special-winter {
+  background-color: var(--hockey);
+}
+
 .page-header--special-tennis .page-header__icon,
 .page-header--special-family .page-header__icon,
 .page-header--special-gto .page-header__icon {
@@ -2989,7 +3016,9 @@ th {
 }
 
 .page-header--special-birthday .page-header__icon,
-.page-header--special-spartakiad .page-header__icon {
+.page-header--special-spartakiad .page-header__icon,
+.page-header--special-winter .page-header__icon,
+.page-header--special-race .page-header__icon {
   width: 250px;
   height: 250px;
 }

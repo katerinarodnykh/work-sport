@@ -544,7 +544,8 @@ img {
   fill: var(--black);
 }
 
-.offer__bottom {
+.offer__bottom,
+.service-application {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1324,10 +1325,6 @@ img {
   background-position: center top;
   background-repeat: no-repeat;
   width: 950px;
-}
-
-.services__item--special-hockey {
-  width: 460px;
 }
 
 .services__item--special:after {
@@ -3768,6 +3765,124 @@ th {
 .main-container--volleyball .tabs--color  .tabs__item--active .tabs__link:after {
   background-color: var(--volleyball);
 }
+
+/* Статичные страницы услуг */
+
+.slider--service .slider__content {
+  width: 545px;
+}
+
+.service {
+  padding: 35px 210px 10px 114px;
+  background-color: var(--light-gray);
+}
+
+.service--white {
+  background-color: var(--white);
+  padding: 35px 180px 10px 114px;
+}
+
+.service__subtitle {
+  margin: 0 0 5px 0;
+}
+
+.service__list {
+  list-style: none;
+  /*counter-reset: counter;*/
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service__item {
+  position: relative;
+  padding: 43px 27px 45px 0;
+  width: calc(100%/3);
+}
+
+.service__text {
+  margin: 0 0 35px 0;
+}
+
+/*.service__item:after {
+  counter-increment: counter;
+  content: counter(counter);
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  font-size: 80px;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 0.68;
+  font-family: "Source Sans Pro", "Arial", sans-serif;
+}*/
+
+.service__photo-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 24px 0 15px 0;
+}
+
+.service__photo-item {
+  position: relative;
+  width: 264px;
+  height: 264px;
+  margin: 0 30px 30px 0;
+}
+
+.service__photo-picture {
+  position: relative;
+}
+
+.service__photo-picture::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 0 325px var(--black-opacity) inset;
+}
+
+.service__photo-img {
+  display: block;
+}
+
+.service__photo-text {
+  position: absolute;
+  top: 136px;
+  left: 30px;
+  color: var(--white);
+  width: calc(100% - 60px);
+}
+
+.service__photo-heading {
+  margin: 0 0 7px 0;
+}
+
+.service__photo-points {
+  list-style: none;
+}
+
+.service__photo-point {
+  position: relative;
+  padding: 0 0 0 10px;
+}
+
+.service__photo-point:after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  top: 50%;
+  margin-top: -2px;
+  left: 0;
+  background-color: var(--white);
+}
+
 
 
 

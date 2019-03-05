@@ -60,27 +60,31 @@
                         <!--<svg class="page-header__icon" width="255" height="255"><use xlink:href="css/img/sprite.svg#basketball"></use></svg>
                         <svg class="page-header__icon" width="255" height="255"><use xlink:href="css/img/sprite.svg#volleyball"></use></svg>-->
                     </div>
-                    <ul class="main-tabs">
-                        <li class="main-tabs__item main-tabs__item--active">
-                            <a class="main-tabs__item-link" href="#">Групповой этап</a>
-                        </li>
-                        <li class="main-tabs__item">
-                            <a class="main-tabs__item-link" href="#">Плей-офф</a>
-                        </li>
-                    </ul>
-                    <!--Содержание группового этапа-->
-                    <section class="container">
-                        <ul class="tabs">
+                    <section class="tabs tabs--gray">
+                        <ul class="tabs__navigation">
                             <li class="tabs__item tabs__item--active">
-                                <a class="tabs__item-link" href="#">Турнирная таблица</a>
+                                <a class="tabs__link" href="#">Групповой этап</a>
                             </li>
                             <li class="tabs__item">
-                                <a class="tabs__item-link" href="#">Расписание</a>
-                            </li>
-                            <li class="tabs__item">
-                                <a class="tabs__item-link" href="#">Статистика</a>
+                                <a class="tabs__link" href="#">Плей-офф</a>
                             </li>
                         </ul>
+                    </section>
+                    <!--Содержание группового этапа-->
+                    <section class="container">
+                        <section class="tabs tabs--color">
+                            <ul class="tabs__navigation">
+                                <li class="tabs__item tabs__item--active">
+                                    <a class="tabs__link" href="#">Турнирная таблица</a>
+                                </li>
+                                <li class="tabs__item">
+                                    <a class="tabs__link" href="#">Расписание</a>
+                                </li>
+                                <li class="tabs__item">
+                                    <a class="tabs__link" href="#">Статистика</a>
+                                </li>
+                            </ul>
+                        </section>
                         <!--Содержание турнирной таблицы-->
                         <!--Футбол-->
                         <table class="table table--tournament">

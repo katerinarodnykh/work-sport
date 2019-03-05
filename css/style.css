@@ -2349,112 +2349,8 @@ span.announcement__item {
   opacity: 0.1;
 }
 
-.main-tabs {
-  height: 40px;
-  line-height: 40px;
-  display: flex;
-  background-color: var(--light-gray);
-  list-style: none;
-}
-
-.main-tabs--smaller {
-  height: 50px;
-  line-height: 50px;
-}
-
-.main-tabs__item {
-  display: block;
-  width: 50%;
-  text-align: center;
-  position: relative;
-  cursor: pointer;
-}
-
-.main-tabs__item-link {
-  color: var(--black-opacity);
-  display: block;
-}
-
-.main-tabs__item--active .main-tabs__item-link {
-  color: var(--black);
-}
-
-.main-tabs__item:hover .main-tabs__item-link {
-  color: var(--black);
-  transition: color 0.3s;
-}
-
-.main-tabs__item--active:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background-color: var(--gray);
-}
-
 .container {
   padding: 35px 15px 55px 15px;
-}
-
-.tabs {
-  height: 40px;
-  line-height: 40px;
-  display: flex;
-  list-style: none;
-  position: relative;
-}
-
-.tabs:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: var(--light-gray);
-  z-index: 1;
-}
-
-.tabs__item {
-  width: calc(100%/3);
-  position: relative;
-}
-
-.tabs .tabs__item {
-  width: 195px;
-  text-align: center;
-}
-
-.tabs__item-link {
-  display: block;
-  width: 100%;
-  height: 100%;
-  color: var(--black);
-}
-
-.tabs__item--active:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
-  z-index: 2;
-}
-
-.main-container--football .tabs__item--active:after {
-  background-color: var(--football);
-}
-
-.main-container--basketball .tabs__item--active:after {
-  background-color: var(--basketball);
-}
-
-.main-container--volleyball .tabs__item--active:after {
-  background-color: var(--volleyball);
 }
 
 .schedule {
@@ -2580,6 +2476,7 @@ th {
 .table__row--date {
   background-color: var(--gray);
   color: var(--white);
+  height: 26px;
 }
 
 .table__cell--place {
@@ -3512,50 +3409,6 @@ th {
   line-height: 26px;
 }
 
-.match-tabs__navigation {
-  height: 50px;
-  line-height: 50px;
-  display: flex;
-  list-style: none;
-  position: relative;
-}
-
-.match-tabs__navigation:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: var(--light-gray);
-  z-index: 1;
-}
-
-.match-tabs__item {
-  width: calc(100%/3);
-  position: relative;
-  text-align: center;
-  color: var(--black-opacity);
-  cursor: pointer;
-}
-
-.match-tabs__item--active,
-.match-tabs__item:hover {
-  color: var(--black);
-  transition: color 0.3s;
-}
-
-.match-tabs__item--active:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background-color: var(--gray);
-  z-index: 2;
-}
-
 /* Статистика матча */
 
 .table--match-stats .table__cell {
@@ -3806,6 +3659,114 @@ th {
   display: block;
   margin: 30px 0 0 0;
   font-weight: 700;
+}
+
+/* Табы */
+
+.tabs__navigation {
+  height: 50px;
+  line-height: 50px;
+  display: flex;
+  list-style: none;
+  position: relative;
+}
+
+.tabs__navigation:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--light-gray);
+  z-index: 1;
+}
+
+.tabs__item {
+  width: calc(100%/3);
+  height: 100%;
+  flex-grow: 1;
+}
+
+.tabs__link {
+  display: block;
+  position: relative;
+  text-align: center;
+  color: var(--black-opacity);
+  cursor: pointer;
+}
+
+.tabs__item--active .tabs__link,
+.tabs__item:hover .tabs__link {
+  color: var(--black);
+  transition: color 0.3s;
+}
+
+.tabs__item--active .tabs__link:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--gray);
+  z-index: 2;
+}
+
+/* Серые табы */
+
+.tabs--gray .tabs__navigation {
+  height: 40px;
+  line-height: 40px;
+  background-color: var(--light-gray);
+}
+
+.tabs--team .tabs__navigation {
+  height: 50px;
+  line-height: 50px;
+}
+
+/* Цветные */
+
+.tabs--color .tabs__navigation {
+  height: 40px;
+  line-height: 40px;
+}
+
+.tabs--color .tabs__navigation:after {
+  display: none;
+}
+
+.tabs--color .tabs__item {
+  width: 195px;
+  flex-grow: 0;
+}
+
+.tabs--color .tabs__link {
+  color: var(--black);
+}
+
+.tabs--color .tabs__item--active .tabs__link:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.main-container--football .tabs--color .tabs__item--active .tabs__link:after {
+  background-color: var(--football);
+}
+
+.main-container--basketball .tabs--color .tabs__item--active .tabs__link:after {
+  background-color: var(--basketball);
+}
+
+.main-container--volleyball .tabs--color  .tabs__item--active .tabs__link:after {
+  background-color: var(--volleyball);
 }
 
 

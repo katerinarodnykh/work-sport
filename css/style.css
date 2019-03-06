@@ -2319,6 +2319,17 @@ span.announcement__item {
   border: 1px solid var(--hockey);
 }
 
+/* Слайдеры в новстях */
+
+.news-list__content .vertical-slider {
+  padding: 30px 33px 55px 33px;
+  margin: 0 0 55px 0;
+}
+
+.news-list__content .vertical-slider__container {
+  margin: 0;
+}
+
 /* Групповой этап */
 
 .main-container--football .page-header {
@@ -3603,6 +3614,28 @@ th {
 
 .news-item__tag--brain-ring:after {
   background-color: var(--brain-ring);
+}
+
+.news-list__tag {
+  font-size: 12px;
+  padding: 0 0 0 20px;
+  position: relative;
+  margin: 0 0 35px 0;
+}
+
+.news-list__tag:after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 4px;
+  left: 0;
+  top: 50%;
+  margin-top: -2px;
+  background-color: var(--red);
+}
+
+.news-list__tag--other:after {
+  background-color: var(--gray-additional);
 }
 
 /* Новость */

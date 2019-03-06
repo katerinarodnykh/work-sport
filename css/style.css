@@ -109,6 +109,8 @@ html {
   display: flex;
   flex-wrap: nowrap;
   margin: 0 auto;
+  border-right: 1px solid var(--gray-additional);
+  border-left: 1px solid var(--gray-additional);
 }
 
 a {
@@ -408,7 +410,6 @@ img {
   width: 1180px;
   display: flex;
   flex-direction: column;
-  border-right: 1px solid var(--gray-additional);
 }
 
 .footer {
@@ -3795,7 +3796,7 @@ th {
 
 .service__item {
   position: relative;
-  padding: 43px 27px 45px 0;
+  padding: 0 27px 15px 0;
   width: calc(100%/3);
 }
 
@@ -3856,6 +3857,10 @@ th {
   left: 30px;
   color: var(--white);
   width: calc(100% - 60px);
+}
+
+.service__photo-text--equipment {
+  top: 108px;
 }
 
 .service__photo-heading {

@@ -121,71 +121,85 @@
                         </div>
                         <a class="button application-block__button" href="#">Отправить заявку</a>
                     </section>
-                    <form class="form" action="" method="post">
-                        <button class="form__close js-order-request-close" type="button"></button>
-                        <h3 class="subtitle form__subtitle">Заявка на участие </br> в спортивном мероприятии</h3>
-                        <p class="form__text">Отправьте запрос на участие или проведение спортивного мероприятия для вашей команды и мы обязательно свяжемся с вами в ближайшее время.</p>
-                        <div class="form__group">
-                            <!--Весь блок отображается только тогда, когда есть ошибка-->
-                            <p class="form__error">Необходимо указать имя</p>
-                            <input type="text" class="form__input" placeholder="Как к вам обращаться *" aria-required="true" aria-invalid="true" required>
-                        </div>
-                        <div class="form__group">
-                            <!--<p class="form__error">Необходимо указать название компании</p>-->
-                            <input type="text" class="form__input" placeholder="Название компании *" aria-required="true" aria-invalid="true" required>
-                        </div>
-                        <div class="form__container">
-                            <div class="form__group">
-                                <!--<p class="form__error">Необходимо указать номер телефона</p>-->
-                                <input type="tel" class="form__input" placeholder="Номер телефона *" aria-required="true" aria-invalid="true" required>
+                    <div class="modal" aria-hidden="true">
+                        <div class="modal__overlay" tabindex="-1">
+                            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="application-modal">
+                                <header class="modal__header">
+                                    <h2 class="subtitle modal__title" id="application-modal"></h2>
+                                    <button class="modal__close" aria-label="Закрыть модальное окно"></button>
+                                </header>
+                                <main class="modal__content">
+                                    <form class="form" action="" method="post">
+                                        <h3 class="subtitle form__subtitle">Заявка на участие </br> в спортивном мероприятии</h3>
+                                        <p class="form__text">Отправьте запрос на участие или проведение спортивного мероприятия для вашей команды и мы обязательно свяжемся с вами в ближайшее время.</p>
+                                        <div class="form__group">
+                                            <!--Весь блок отображается только тогда, когда есть ошибка-->
+                                            <p class="form__error">Необходимо указать имя</p>
+                                            <input type="text" class="form__input" placeholder="Как к вам обращаться *" aria-required="true" aria-invalid="true" required>
+                                        </div>
+                                        <div class="form__group">
+                                            <!--<p class="form__error">Необходимо указать название компании</p>-->
+                                            <input type="text" class="form__input" placeholder="Название компании *" aria-required="true" aria-invalid="true" required>
+                                        </div>
+                                        <div class="form__container">
+                                            <div class="form__group">
+                                                <!--<p class="form__error">Необходимо указать номер телефона</p>-->
+                                                <input type="tel" class="form__input" placeholder="Номер телефона *" aria-required="true" aria-invalid="true" required>
+                                            </div>
+                                            <div class="form__group">
+                                                <!--<p class="form__error">Необходимо указать электронную почту</p>-->
+                                                <input type="email" class="form__input" placeholder="Электронная почта *" aria-required="true" aria-invalid="true" required>
+                                            </div>
+                                        </div>
+                                        <p class="form__note">Если вы хотите принять участие в понравившемся турнире или чемпионате, заполните пункты ниже.</p>
+                                        <div class="form__group">
+                                            <label class="form__label">Желаемые виды спорта:</label>
+                                            <!--Мультиселект, можно выбрать несколько значений-->
+                                            <div class="form__select">
+                                                <div class="form__select-top">
+                                                    <span>Выберите значение из списка</span>
+                                                    <svg class="form__select-icon" width="8" height="5"><use xlink:href="css/img/sprite.svg#select"></use></svg>
+                                                </div>
+                                                <!--Открывается js, не продумано как это будет выглядеть когда пользователь выбрал, я вижу что это значения через запятую в form__select-top-->
+                                                <!--К элементу добавить скролл как в спринге-->
+                                                <ul class="form__select-list" style="display: none;">
+                                                    <li class="form__select-option">Футбол</li>
+                                                    <li class="form__select-option form__select-option--active">Хоккей</li>
+                                                    <li class="form__select-option">Футбол</li>
+                                                    <li class="form__select-option">Футбол</li>
+                                                    <li class="form__select-option">Футбол</li>
+                                                    <li class="form__select-option">Футбол</li>
+                                                    <li class="form__select-option">Футбол</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="form__group form__group--tournaments">
+                                            <label class="form__label">Интересующие турниры:</label>
+                                            <input type="text" class="form__input" placeholder="Внесите название турнира/турниров" >
+                                        </div>
+                                        <div class="form__buttons">
+                                            <button class="button form__button" type="reset">Отменить</button>
+                                            <!--Класс button--disabled висит до тех пор пока не заполнены все обязательные поля-->
+                                            <button class="button button--disabled" type="submit">Отправить заявку</button>
+                                        </div>
+                                        <!--Блок после отправки формы-->
+                                        <div class="form__feedback">
+                                            <h3 class="subtitle form__subtitle">Заявка отправлена</h3>
+                                            <p class="form__text">Мы рассмотрим вашу заявку в ближайшее время и свяжемся для уточнения деталей организации мероприятия.</p>
+                                            <div class="form__buttons">
+                                                <button class="button" type="button">Закрыть</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </main>
+                                <!--Может не быть-->
+                                <footer class="modal__footer">
+                                    <button class="button modal__button" aria-label="Закрыть модальное окно">Закрыть</button>
+                                    <button class="button modal__button">Другая кнопка</button>
+                                </footer>
                             </div>
-                            <div class="form__group">
-                                <!--<p class="form__error">Необходимо указать электронную почту</p>-->
-                                <input type="email" class="form__input" placeholder="Электронная почта *" aria-required="true" aria-invalid="true" required>
-                            </div>
                         </div>
-                        <p class="form__note">Если вы хотите принять участие в понравившемся турнире или чемпионате, заполните пункты ниже.</p>
-                        <div class="form__group">
-                            <label class="form__label">Желаемые виды спорта:</label>
-                            <!--Мультиселект, можно выбрать несколько значений-->
-                            <div class="form__select">
-                                <div class="form__select-top">
-                                    <span>Выберите значение из списка</span>
-                                    <svg class="form__select-icon" width="8" height="5"><use xlink:href="css/img/sprite.svg#select"></use></svg>
-                                </div>
-                                <!--Открывается js, не продумано как это будет выглядеть когда пользователь выбрал, я вижу что это значения через запятую в form__select-top-->
-                                <!--К элементу добавить скролл как в спринге-->
-                                <ul class="form__select-list" style="display: none;">
-                                    <li class="form__select-option">Футбол</li>
-                                    <li class="form__select-option form__select-option--active">Хоккей</li>
-                                    <li class="form__select-option">Футбол</li>
-                                    <li class="form__select-option">Футбол</li>
-                                    <li class="form__select-option">Футбол</li>
-                                    <li class="form__select-option">Футбол</li>
-                                    <li class="form__select-option">Футбол</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="form__group form__group--tournaments">
-                            <label class="form__label">Интересующие турниры:</label>
-                            <input type="text" class="form__input" placeholder="Внесите название турнира/турниров" >
-                        </div>
-                        <div class="form__buttons">
-                            <button class="button form__button" type="reset">Отменить</button>
-                            <!--Класс button--disabled висит до тех пор пока не заполнены все обязательные поля-->
-                            <button class="button button--disabled" type="submit">Отправить заявку</button>
-                        </div>
-                        <!--Блок после отправки формы-->
-                        <div class="form__feedback">
-                            <h3 class="subtitle form__subtitle">Заявка отправлена</h3>
-                            <p class="form__text">Мы рассмотрим вашу заявку в ближайшее время и свяжемся для уточнения деталей организации мероприятия.</p>
-                            <div class="form__buttons">
-                                <button class="button" type="button">Закрыть</button>
-                            </div>
-                        </div>
-                    </form>
-                    <!--Для затемнения фона за формой добавляется этот блок-->
-                    <div class="overlay"></div>
+                    </div>
                 </div>
                 <footer class="footer">
                     <!--! Такой подвал только на странице контактов, на всех остальных в подвале черная форма с заказом звонка и карта-->

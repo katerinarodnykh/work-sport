@@ -61,6 +61,7 @@ html {
   --gray: #2c2c2c;
   --gray-additional: #cccccc;
   --light-gray: #f2f2f2;
+  --gray-input: #908e8e;
   --red: #e94e34;
   --basketball: #ff803f;
   --volleyball: #fed84d;
@@ -1358,18 +1359,6 @@ img {
 
 /* Модальное окно с формой */
 
-.form {
-  width: 620px;
-  padding: 35px 30px 30px 30px;
-  background-color: var(--white);
-  position: fixed;
-  top: 50%;
-  margin-top: -338px;
-  left: 50%;
-  margin-left: -310px;
-  z-index: 100;
-}
-
 .form__subtitle {
   margin: 0 0 25px 0;
 }
@@ -1473,28 +1462,28 @@ img {
 }
 
 ::-webkit-input-placeholder {
-  color: var(--black-opacity);
+  color: var(--gray-input);
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 12px;
   line-height: 1.5;
 }
 
 ::-moz-placeholder {
-  color: var(--black-opacity);
+  color: var(--gray-input);
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 12px;
   line-height: 1.5;
 }
 
 :-ms-input-placeholder {
-  color: var(--black-opacity);
+  color: var(--gray-input);
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 12px;
   line-height: 1.5;
 }
 
 :-moz-placeholder {
-  color: var(--black-opacity);
+  color: var(--gray-input);
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 12px;
   line-height: 1.5;
@@ -1521,7 +1510,30 @@ img {
   border: 1px solid var(--red);
 }
 
-.form__close {
+.modal__container {
+  width: 620px;
+  padding: 35px 30px 30px 30px;
+  background-color: var(--white);
+  position: fixed;
+  top: 120px;
+  left: 50%;
+  margin-left: -310px;
+  z-index: 100;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+}
+
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal__close {
   position: absolute;
   top: 15px;
   right: 15px;
@@ -1534,8 +1546,8 @@ img {
   outline: none;
 }
 
-.form__close::before,
-.form__close::after {
+.modal__close::before,
+.modal__close::after {
   content: "";
   position: absolute;
   top: 7px;
@@ -1545,23 +1557,22 @@ img {
   background-color: var(--gray-additional);
 }
 
-.form__close::before {
+.modal__close::before {
   transform: rotate(45deg);
 }
 
-.form__close::after {
+.modal__close::after {
   transform: rotate(-45deg);
 }
 
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 99;
-  background-color: var(--black);
-  opacity: 0.8;
+.modal__footer {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0 0 0;
+}
+
+.modal__button {
+  margin: 0 0 0 10px;
 }
 
 /* Лига  Work & Sport */

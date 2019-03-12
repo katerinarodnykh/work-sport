@@ -3833,7 +3833,6 @@ th {
 
 .service__list {
   list-style: none;
-  /*counter-reset: counter;*/
   display: flex;
   flex-wrap: wrap;
 }
@@ -3848,19 +3847,9 @@ th {
   margin: 0 0 35px 0;
 }
 
-/*.service__item:after {
-  counter-increment: counter;
-  content: counter(counter);
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  font-size: 80px;
-  font-weight: 700;
-  color: var(--white);
-  line-height: 0.68;
-  font-family: "Source Sans Pro", "Arial", sans-serif;
-}*/
+.service__icon {
+  margin: 0 0 20px 0;
+}
 
 .service__photo-list {
   list-style: none;

@@ -14,6 +14,7 @@
                     <a class="logo header__logo" href="#">
                         <img class="logo__img" src="img/ws-logo.png" width="155" height="71">
                     </a>
+                    <button class="header__hamburger"><span></span></button>
                     <nav class="navigation">
                         <ul class="navigation__list">
                             <li class="navigation__item navigation__item--active">
@@ -508,5 +509,15 @@
                 </div>
             </div>
         </main>
+        <script>
+            var hamburger = document.querySelector(".header__hamburger");
+            var navigation = document.querySelector(".navigation");
+
+            hamburger.addEventListener("click", function (evt) {
+                evt.preventDefault();
+                hamburger.classList.toggle("open");
+                navigation.classList.toggle("open");
+            });
+        </script>
     </body>
 </html>

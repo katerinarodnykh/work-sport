@@ -3925,6 +3925,45 @@ th {
   background-color: var(--white);
 }
 
+@media (max-width: 1440px) {
+  .main {
+    width: 100vw;
+    min-width: unset;
+  }
+
+  .temp {
+    display: none;
+  }
+
+  .header {
+    width: 18%;
+  }
+
+  .main-container {
+    width: 82%;
+  }
+
+  .slider--main .slider__item {
+    height: calc(100%/1.84);
+    overflow: hidden;
+  }
+
+  .slider--main .slider__content {
+    top: 25%;
+    left: 12%;
+  }
+
+  .vertical-slider,
+  .projects-slider,
+  .feedback,
+  .partners-block,
+  .advantages,
+  .offer,
+  .worksport-info {
+    display: none;
+  }
+}
+
 @media (max-width: 960px) {
   .main {
     flex-direction: column;

@@ -227,11 +227,11 @@ img {
   align-items: center;
   font-size: 12px;
   font-weight: 600;
-  line-height: 40px;
+  line-height: 18px;
   letter-spacing: 0.3px;
   color: var(--white);
   text-transform: uppercase;
-  padding: 0 30px 0 30px;
+  padding: 11px 30px;
   border-left: 1px solid var(--black);
   transition: 0.3s;
 }
@@ -422,7 +422,7 @@ img {
 }
 
 .worksport-info__content {
-  padding: 20px 115px 20px 30px;
+  padding: 15px 115px 20px 30px;
 }
 
 .worksport-info__top {
@@ -1341,7 +1341,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  box-shadow: 0 0 0 240px var(--black-opacity) inset;
+  box-shadow: 0 0 0 240px rgba(0, 0, 0, 0.7) inset;
   z-index: -1;
 }
 
@@ -3943,8 +3943,13 @@ th {
     width: 82%;
   }
 
+  .slider__list {
+    overflow: hidden;
+  }
+
   .slider--main .slider__item {
-    height: calc(100%/1.84);
+    width: unset;
+    height: auto;
     overflow: hidden;
   }
 
@@ -3957,10 +3962,57 @@ th {
   .projects-slider,
   .feedback,
   .partners-block,
-  .advantages,
-  .offer,
-  .worksport-info {
+  .advantages {
     display: none;
+  }
+
+  .slider__item img {
+    display: block;
+    width: auto;
+    height: auto;
+    position: relative;
+  }
+
+  .offer__item {
+    padding: 7% 20% 7% 10%;
+  }
+
+  .offer__item--projects {
+    padding: 7% 50% 7% 10%;
+  }
+
+  .offer__subtitle,
+  .offer__description,
+  .offer__item--projects .offer__description {
+    width: auto;
+  }
+}
+
+@media (max-width: 1300px) {
+  .worksport-info__img {
+    display: none;
+  }
+
+  .offer__item--oneday .offer__description {
+    display: none;
+  }
+
+  .offer__item {
+    height: calc(50%/1.84);
+  }
+
+  .offer__link {
+    width: 56px;
+    height: 56px;
+  }
+
+  .offer__arrow {
+    width: 17px;
+    height: 7px;
+  }
+
+  .offer__title {
+    padding: 25px 30px;
   }
 }
 
@@ -4168,6 +4220,71 @@ th {
   .submenu__bottom .button {
     width: 170px;
   }
+
+  .worksport-info__img {
+    display: block;
+  }
+
+  .worksport-info__content {
+    padding: 15px 10px 0 30px;
+  }
+
+  .worksport-info p {
+    margin: 15px 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .worksport-info__img {
+    display: none;
+  }
+
+  .worksport-info__content {
+    padding: 15px 25px;
+  }
+
+  .worksport-info__link {
+    margin: 0 0 0 10%;
+  }
+
+  .offer__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: none;
+    width: 100%;
+    border-right: 0;
+    height: 80px;
+    padding: 0 0 0 60px;
+  }
+
+  .offer__description {
+    display: none;
+  }
+
+  .offer__subtitle {
+    margin: 0;
+  }
+
+  .offer__link {
+    width: 80px;
+    height: 80px;
+    position: static;
+    flex-shrink: 0;
+  }
+
+  .offer__arrow {
+    width: 24px;
+    height: 11px;
+  }
+
+  .offer__title {
+    padding: 25px;
+  }
+
+  .offer__list {
+    padding: 0 25px 25px 25px;
+  }
 }
 
 @media (max-width: 615px) {
@@ -4182,6 +4299,14 @@ th {
 }
 
 @media (max-width: 480px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
   .header {
     height: 40px;
   }
@@ -4224,6 +4349,50 @@ th {
 
   .navigation {
     padding: 20px 0;
+  }
+
+  .worksport-info__content {
+    padding: 15px;
+  }
+
+  .worksport-info__link {
+    margin: 0 0 0 15px;
+  }
+
+  .worksport-info__document span {
+    display: none;
+  }
+
+  .worksport-info__document {
+    width: 80px;
+    padding: 0;
+  }
+
+  .worksport-info__doc {
+    margin: 0;
+  }
+
+  .offer__title {
+    padding: 25px 15px;
+  }
+
+  .offer__list {
+    padding: 0 15px 25px 15px;
+  }
+
+  .offer__item {
+    height: 64px;
+    padding: 0 0 0 25px;
+  }
+
+  .offer__link {
+    width: 64px;
+    height: 64px;
+  }
+
+  .offer__arrow {
+    width: 19px;
+    height: 9px;
   }
 }
 

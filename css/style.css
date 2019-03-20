@@ -3960,8 +3960,7 @@ th {
 
   .vertical-slider,
   .projects-slider,
-  .feedback,
-  .partners-block {
+  .feedback {
     display: none;
   }
 
@@ -3987,7 +3986,25 @@ th {
   }
 
   .advantages {
-    padding: 5% 10% 5% 10%;
+    background-repeat: no-repeat;
+    background-color: var(--light-gray);
+    padding: 57px 10% 30px 10%;
+  }
+
+  .partners-block {
+    padding: 57px 10% 30px 10%;
+  }
+
+  .partners__item {
+    width: calc((100% - 116px)/4);
+    height: auto;
+  }
+
+  .partners__img,
+  .partners__link {
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -4001,7 +4018,12 @@ th {
   }
 
   .offer__item {
-    height: calc(50%/1.84);
+    padding: 7% 20% 7% 6%;
+    height: 220px;
+  }
+
+  .offer__item--projects {
+    padding: 2% 55% 2% 6%;
   }
 
   .offer__link {
@@ -4019,12 +4041,20 @@ th {
   }
 
   .advantages {
-    padding: 5% 4% 5% 4%;
+    padding: 57px 30px;
   }
 
   .advantages__icon {
     width: 50px;
     height: 50px;
+  }
+
+  .partners-block {
+    padding: 57px 30px 30px 30px;
+  }
+
+  .partners-block__link {
+    white-space: nowrap;
   }
 }
 
@@ -4245,18 +4275,13 @@ th {
     margin: 15px 0;
   }
 
-  .advantages__item {
-    width: 100%;
+  .offer__item {
+    height: 260px;
+    padding: 7% 20% 7% 30px;
   }
 
-  .advantages__picture {
-    width: auto;
-    margin: 0 45px 0 0;
-  }
-
-  .advantages__icon {
-    width: 80px;
-    height: 80px;
+  .offer__item--projects {
+    padding: 4% 55% 4% 30px;
   }
 }
 
@@ -4311,6 +4336,38 @@ th {
   .offer__list {
     padding: 0 25px 25px 25px;
   }
+
+  .advantages {
+    padding: 57px 25px;
+  }
+
+  .advantages__item {
+    width: 100%;
+  }
+
+  .advantages__picture {
+    width: auto;
+    margin: 0 45px 0 0;
+  }
+
+  .advantages__icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .partners-block {
+    padding: 57px 25px 30px 25px;
+  }
+
+  .partners__list {
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+
+  .partners__item {
+    width: calc((100% - 87px)/3);
+    height: auto;
+  }
 }
 
 @media (max-width: 615px) {
@@ -4321,6 +4378,10 @@ th {
   .submenu__bottom {
     padding: 0;
     background-color: transparent;
+  }
+
+  .partners-block {
+    display: none;
   }
 }
 
@@ -4433,6 +4494,10 @@ th {
   .advantages__picture {
     width: 100px;
     margin: 0;
+  }
+
+  .advantages {
+    padding: 50px 15px 30px 15px;
   }
 }
 

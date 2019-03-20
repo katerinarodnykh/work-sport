@@ -3961,8 +3961,7 @@ th {
   .vertical-slider,
   .projects-slider,
   .feedback,
-  .partners-block,
-  .advantages {
+  .partners-block {
     display: none;
   }
 
@@ -3985,6 +3984,10 @@ th {
   .offer__description,
   .offer__item--projects .offer__description {
     width: auto;
+  }
+
+  .advantages {
+    padding: 5% 10% 5% 10%;
   }
 }
 
@@ -4013,6 +4016,15 @@ th {
 
   .offer__title {
     padding: 25px 30px;
+  }
+
+  .advantages {
+    padding: 5% 4% 5% 4%;
+  }
+
+  .advantages__icon {
+    width: 50px;
+    height: 50px;
   }
 }
 
@@ -4232,6 +4244,20 @@ th {
   .worksport-info p {
     margin: 15px 0;
   }
+
+  .advantages__item {
+    width: 100%;
+  }
+
+  .advantages__picture {
+    width: auto;
+    margin: 0 45px 0 0;
+  }
+
+  .advantages__icon {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -4393,6 +4419,20 @@ th {
   .offer__arrow {
     width: 19px;
     height: 9px;
+  }
+
+  .advantages__item {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .advantages__item:nth-child(odd) {
+    margin: 0 0 30px 0;
+  }
+
+  .advantages__picture {
+    width: 100px;
+    margin: 0;
   }
 }
 

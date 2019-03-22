@@ -422,7 +422,7 @@ img {
 }
 
 .worksport-info__content {
-  padding: 15px 115px 20px 30px;
+  padding: 20px 115px 20px 30px;
 }
 
 .worksport-info__top {
@@ -844,12 +844,12 @@ img {
   margin: 0 0 25px 0;
 }
 
-.feedback--contacts .feedback-form__group:first-child {
+.feedback--contacts .feedback-form__group:first-of-type {
   margin: 0 0 25px 0;
 }
 
-.feedback--contacts .feedback-form__group:first-child .feedback-form__input,
-.feedback--contacts .feedback-form__group:nth-child(2) .feedback-form__input {
+.feedback--contacts .feedback-form__group:first-of-type .feedback-form__input,
+.feedback--contacts .feedback-form__group:nth-of-type(2) .feedback-form__input {
   width: 100%;
 }
 
@@ -1758,6 +1758,7 @@ img {
 .select__top--active,
 .select:focus .select__top  {
   background-color: var(--white-opacity);
+  transition: 0.3s;
 }
 
 .select__icon {
@@ -1800,7 +1801,8 @@ img {
 }
 
 .select--red .select__top:hover,
-.select--red .select__top--active {
+.select--red .select__top--active,
+.select:focus .select__top {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -2086,7 +2088,6 @@ img {
   justify-content: flex-end;
   padding: 55px 114px 35px 114px;
   position: relative;
-  overflow: hidden;
 }
 
 .page-header__container {
@@ -2346,6 +2347,12 @@ span.announcement__item {
 }
 
 /* Групповой этап */
+
+.main-container--football .page-header,
+.main-container--basketball .page-header,
+.main-container--volleyball .page-header {
+  overflow: hidden;
+}
 
 .main-container--football .page-header {
   background-color: var(--football);
@@ -2935,6 +2942,7 @@ th {
 /* Спецпроект */
 
 .page-header--special {
+  overflow: hidden;
   background-color: var(--red);
 }
 
@@ -3961,6 +3969,592 @@ th {
   .vertical-slider,
   .projects-slider,
   .feedback {
+    display: none;
+  }
+
+  .slider__item img {
+    display: block;
+    width: auto;
+    height: auto;
+    position: relative;
+  }
+
+  .offer__item {
+    padding: 7% 20% 7% 10%;
+  }
+
+  .offer__item--projects {
+    padding: 7% 50% 7% 10%;
+  }
+
+  .offer__subtitle,
+  .offer__description,
+  .offer__item--projects .offer__description {
+    width: auto;
+  }
+
+  .advantages {
+    background-repeat: no-repeat;
+    background-color: var(--light-gray);
+    padding: 57px 10% 30px 10%;
+  }
+
+  .partners-block {
+    padding: 57px 10% 30px 10%;
+  }
+
+  .partners__item {
+    width: calc((100% - 116px)/4);
+    height: auto;
+  }
+
+  .partners__img,
+  .partners__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .worksport-info__img {
+    display: none;
+  }
+
+  .offer__item--oneday .offer__description {
+    display: none;
+  }
+
+  .offer__item {
+    padding: 7% 20% 7% 6%;
+    height: 220px;
+  }
+
+  .offer__item--projects {
+    padding: 2% 55% 2% 6%;
+  }
+
+  .offer__link {
+    width: 56px;
+    height: 56px;
+  }
+
+  .offer__arrow {
+    width: 17px;
+    height: 7px;
+  }
+
+  .offer__title {
+    padding: 25px 30px;
+  }
+
+  .advantages {
+    padding: 57px 30px;
+  }
+
+  .advantages__icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .partners-block {
+    padding: 57px 30px 30px 30px;
+  }
+
+  .partners-block__link {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 960px) {
+  .main {
+    flex-direction: column;
+    width: 100%;
+    min-width: unset;
+  }
+
+  .main-container {
+    width: 100%;
+  }
+
+  .header {
+    width: 100%;
+    height: 64px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+  }
+
+  .header__container {
+    min-height: auto;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .header__logo {
+    margin: 0;
+  }
+
+  .header__info {
+    margin: 0;
+  }
+
+  .header__socials {
+    display: none;
+  }
+
+  .header__hamburger {
+    flex-shrink: 0;
+    display: block;
+    width: 58px;
+    height: 100%;
+    padding: 5px 12px;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    cursor: pointer;
+    outline: none;
+    margin: 0 5% 0 auto;
+    order: 2;
+  }
+
+  .header__hamburger span {
+    width: 100%;
+    background-color: var(--white);
+    height: 2px;
+    display: block;
+    position: relative;
+  }
+
+  .header__hamburger span:after,
+  .header__hamburger span:before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--white);
+  }
+
+  .header__hamburger span:before {
+    top: -9px;
+  }
+
+  .header__hamburger span:after {
+    bottom: -9px;
+  }
+
+  .header__hamburger.open span {
+    background: transparent;
+  }
+
+  .header__hamburger.open span:before,
+  .header__hamburger.open span:after {
+    transition-duration: 0.2s, 0.2s;
+    transition-delay: 0.2s, 0s;
+  }
+
+  .header__hamburger.open span:before {
+    transition-property: top, transform;
+  }
+
+  .header__hamburger.open span:after {
+    transition-property: bottom, transform;
+  }
+
+  .header__hamburger.open span:before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  .header__hamburger.open span:after {
+    bottom: 0;
+    transform: rotate(-45deg);
+  }
+
+  .header__hamburger.open span:before,
+  .header__hamburger.open span:after {
+    transition-delay: 0s, 0.2s;
+  }
+
+  .contacts-block__tel {
+    margin: 0;
+  }
+
+  .header__logo .logo__img {
+    width: 122px;
+    height: 56px;
+  }
+
+  .header__logo {
+    margin: 0 55px 0 10px;
+  }
+
+  .navigation.open {
+    display: block;
+  }
+
+  .navigation {
+    display: none;
+    width: 100%;
+    order: 3;
+    padding: 20px;
+    background-color: var(--white);
+  }
+
+  .navigation__link {
+    border: 0;
+    color: var(--black);
+    justify-content: flex-start;
+    font-size: 14px;
+  }
+
+  .navigation__arrow {
+    margin: 0 0 0 10px;
+    width: 20px;
+  }
+
+  .submenu {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 10px 30px;
+    border: 0;
+  }
+
+  .submenu__content {
+    flex-wrap: wrap;
+  }
+
+  .submenu__navigation {
+    margin: 0 0 10px 0;
+  }
+
+  .submenu__heading {
+    margin: 0 0 15px 0;
+    font-size: 18px;
+  }
+
+  .submenu__link {
+    width: auto;
+  }
+
+  .submenu__column {
+    min-width: 200px;
+    padding: 0 0 20px 0;
+  }
+
+  .submenu__bottom-text {
+    width: auto;
+  }
+
+  .submenu__bottom {
+    padding: 15px 20px;
+  }
+
+  .button {
+    white-space: nowrap;
+  }
+
+  .submenu__button {
+    margin: 0 0 20px 0;
+  }
+
+  .submenu__button:last-of-type {
+    margin: 0;
+  }
+
+  .submenu__bottom .button {
+    width: 170px;
+  }
+
+  .worksport-info__img {
+    display: block;
+  }
+
+  .worksport-info__content {
+    padding: 15px 10px 0 30px;
+  }
+
+  .worksport-info p {
+    margin: 15px 0;
+  }
+
+  .offer__item {
+    height: 260px;
+    padding: 7% 20% 7% 30px;
+  }
+
+  .offer__item--projects {
+    padding: 4% 55% 4% 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .worksport-info__img {
+    display: none;
+  }
+
+  .worksport-info__content {
+    padding: 15px 25px;
+  }
+
+  .worksport-info__link {
+    margin: 0 0 0 10%;
+  }
+
+  .offer__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: none;
+    width: 100%;
+    border-right: 0;
+    height: 80px;
+    padding: 0 0 0 60px;
+  }
+
+  .offer__description {
+    display: none;
+  }
+
+  .offer__subtitle {
+    margin: 0;
+  }
+
+  .offer__link {
+    width: 80px;
+    height: 80px;
+    position: static;
+    flex-shrink: 0;
+  }
+
+  .offer__arrow {
+    width: 24px;
+    height: 11px;
+  }
+
+  .offer__title {
+    padding: 25px;
+  }
+
+  .offer__list {
+    padding: 0 25px 25px 25px;
+  }
+
+  .advantages {
+    padding: 57px 25px;
+  }
+
+  .advantages__item {
+    width: 100%;
+  }
+
+  .advantages__picture {
+    width: auto;
+    margin: 0 45px 0 0;
+  }
+
+  .advantages__icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .partners-block {
+    padding: 57px 25px 30px 25px;
+  }
+
+  .partners__list {
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+
+  .partners__item {
+    width: calc((100% - 87px)/3);
+    height: auto;
+  }
+}
+
+@media (max-width: 615px) {
+  .submenu__bottom-text {
+    display: none;
+  }
+
+  .submenu__bottom {
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .partners-block {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .header {
+    height: 40px;
+  }
+
+  .header__container {
+    padding: 0 10px;
+    justify-content: space-between;
+  }
+
+  .contacts-block__mail {
+    display: none;
+  }
+
+  .contacts-block__tel {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .header__logo .logo__img {
+    width: 74px;
+    height: 35px;
+  }
+
+  .header__logo {
+    margin: 0;
+  }
+
+  .header__hamburger {
+    width: 50px;
+    margin: 0;
+  }
+
+  .header__hamburger span:before {
+    top: -7px;
+  }
+
+  .header__hamburger span:after {
+    bottom: -7px;
+  }
+
+  .navigation {
+    padding: 20px 0;
+  }
+
+  .worksport-info__content {
+    padding: 15px;
+  }
+
+  .worksport-info__link {
+    margin: 0 0 0 15px;
+  }
+
+  .worksport-info__document span {
+    display: none;
+  }
+
+  .worksport-info__document {
+    width: 80px;
+    padding: 0;
+  }
+
+  .worksport-info__doc {
+    margin: 0;
+  }
+
+  .offer__title {
+    padding: 25px 15px;
+  }
+
+  .offer__list {
+    padding: 0 15px 25px 15px;
+  }
+
+  .offer__item {
+    height: 64px;
+    padding: 0 0 0 25px;
+  }
+
+  .offer__link {
+    width: 64px;
+    height: 64px;
+  }
+
+  .offer__arrow {
+    width: 19px;
+    height: 9px;
+  }
+
+  .advantages__item {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .advantages__item:nth-child(odd) {
+    margin: 0 0 30px 0;
+  }
+
+  .advantages__picture {
+    width: 100px;
+    margin: 0;
+  }
+
+  .advantages {
+    padding: 50px 15px 30px 15px;
+  }
+}
+
+
+@media (max-width: 1458px) {
+  .main {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .temp {
+    display: none;
+  }
+
+  .header {
+    width: 18%;
+  }
+
+  .submenu {
+    width: 80.8vw;
+    left: 17.7vw;
+    padding: 160px 110px 80px 114px;
+  }
+
+  .submenu__link {
+    min-width: 230px;
+  }
+
+  .main-container {
+    width: 82%;
+  }
+
+  .slider__list {
+    overflow: hidden;
+  }
+
+  .slider--main .slider__item {
+    width: unset;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .slider--main .slider__content {
+    top: 25%;
+    left: 12%;
+  }
+
+  .vertical-slider,
+  .projects-slider {
     display: none;
   }
 

@@ -2983,6 +2983,7 @@ th {
   fill: var(--black);
   opacity: 0.1;
   z-index: 1;
+  pointer-events: none;
 }
 
 /* Спецпроект */
@@ -4111,6 +4112,35 @@ th {
   .vertical-slider {
     padding: 55px 10% 30px 10%;
   }
+
+  .news__container {
+    padding: 55px 10%;
+  }
+
+  .page-header {
+    padding: 55px 10% 35px 10%;
+  }
+
+  .page-header__text {
+    width: 60%;
+    padding: 0 0 0 40px;
+  }
+
+  .specials__wrapper {
+    padding: 20px 30px 20px 30px;
+  }
+
+  .specials__wrapper:first-of-type {
+    padding: 55px 30px 0 30px;
+  }
+
+  .specials__wrapper {
+    padding: 20px 4% 20px 4%;
+  }
+
+  .specials__wrapper:first-of-type {
+    padding: 55px 1% 0 6%;
+  }
 }
 
 @media (max-width: 1360px) {
@@ -4215,6 +4245,68 @@ th {
   .list-item__link {
     width: 60px;
     height: 60px;
+  }
+
+  .news__container {
+    padding: 55px 30px;
+  }
+
+  .page-header {
+    height: auto;
+    padding: 55px 10% 35px 10%;
+  }
+
+  .page-header--specials .page-header__container {
+    flex-direction: column;
+  }
+
+  .page-header--specials .page-header__text {
+    width: 100%;
+    padding: 15px 0 0 0;
+  }
+
+  .specials__wrapper {
+    padding: 20px 0 20px 30px;
+  }
+
+  .specials__wrapper:first-of-type {
+    padding: 55px 0 0 30px;
+  }
+
+  .specials__item {
+    width: calc((100% - 45px)/3);
+    height: 260px;
+  }
+
+  .specials__type {
+    padding: 0 0 0 40px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .specials__item {
+    height: 230px;
+  }
+
+  .specials__price {
+    margin: 0 7px 0 0;
+  }
+
+  .specials__info {
+    top: 65%;
+  }
+
+  .specials__item--birthday .specials__info {
+    top: 75%;
+  }
+
+  .specials__quantity,
+  .specials__link {
+    display: none;
+  }
+
+  .specials__subtitle {
+    font-size: 27px;
   }
 }
 
@@ -4579,6 +4671,123 @@ th {
   .vertical-slider {
     overflow: hidden;
   }
+
+  .news__container {
+    padding: 55px 25px;
+  }
+
+  .page-header {
+    padding: 55px 25px 35px 25px;
+  }
+
+  .specials__wrapper {
+    flex-direction: column;
+    padding: 30px 25px 30px 25px;
+  }
+
+  .specials__wrapper:first-of-type {
+    padding: 30px 25px 20px 25px;
+  }
+
+  .specials__type {
+    writing-mode: unset;
+    text-align: left;
+    transform: none;
+    font-size: 20px;
+    opacity: unset;
+    color: var(--black);
+    padding: 0;
+    margin: 0 0 25px 0;
+    text-transform: unset;
+  }
+
+  .specials__list {
+    flex-direction: column;
+  }
+
+  .specials__item {
+    width: 100%;
+    height: 166px;
+    background-color: var(--light-gray);
+    border-bottom: 2px solid var(--white);
+    margin: 0;
+  }
+
+  .specials__square {
+    display: none;
+  }
+
+  .specials__note {
+    color: var(--black-opacity);
+    margin: 30px 0 10px 0;
+  }
+
+  .specials__subtitle {
+    min-height: unset;
+  }
+
+  .specials__details {
+    display: none;
+  }
+
+  .specials__info {
+    opacity: 1;
+  }
+
+  .specials__price {
+    margin: 0 20px 0 0;
+  }
+
+  .specials__info {
+    position: static;
+  }
+
+  .specials__quantity {
+    display: flex;
+    color: var(--black-opacity);
+  }
+
+  .specials__quantity-icon {
+    fill: var(--black-opacity);
+  }
+
+  .specials__link {
+    display: flex;
+  }
+
+  .specials__subtitle {
+    font-size: 32px;
+    margin: 0 0 15px 0;
+    color: var(--black)!important;
+  }
+
+  .specials__note,
+  .specials__info,
+  .specials__subtitle {
+    position: relative;
+    z-index: 2;
+    top: unset !important;
+    left: unset !important;
+  }
+
+  .specials__link {
+    z-index: 2;
+  }
+
+  .specials__icon {
+    left: unset !important;
+    right: 10% !important;
+    fill: var(--white);
+    opacity: unset;
+  }
+
+  .specials__arrow {
+    fill: var(--black);
+  }
+
+  .specials__link:hover {
+    border: 1px solid var(--black);
+  }
 }
 
 @media (max-width: 615px) {
@@ -4786,6 +4995,35 @@ th {
     font-size: 32px;
     font-weight: 700;
     line-height: 1.19;
+  }
+
+  .news__container {
+    padding: 55px 15px;
+  }
+
+  .page-header {
+    padding: 30px 14px 35px 15px;
+  }
+
+  .specials__wrapper:first-of-type {
+    padding: 30px 15px 20px 15px;
+  }
+
+  .specials__wrapper {
+    padding: 30px 15px 30px 15px;
+  }
+
+  .specials__note {
+    margin: 15px 0 10px 0;
+  }
+
+  .specials__info {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .specials__price {
+    margin: 0 0 10px 0;
   }
 }
 

@@ -3708,6 +3708,20 @@ th {
   background-color: var(--gray-additional);
 }
 
+.news-block__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.news-block {
+  padding: 0 33px 0 33px;
+}
+
+.news-block .news-item {
+  margin: 0 30px 30px 0;
+}
+
 /* Новость */
 
 .news .breadcrumbs,
